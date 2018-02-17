@@ -1,3 +1,3 @@
 # Problem Solving Methods
-[back to index]()
+[back to index](README.MD)
 
