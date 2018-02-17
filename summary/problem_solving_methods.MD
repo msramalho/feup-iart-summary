@@ -44,8 +44,9 @@ Either can be transformed into the other by increasing (Graph -> Tree) or decrea
 ### Algoruthims for Week Methods
  * Generate and Test
  * Depth-first Search
- * Breadth-firts Search
- * Bracnh and Bound
+ * Breadth-first Search
+ * Backtracking
+ * Branch and Bound
  * Hill Climbing
  * Simulated Annealing
  * Genetic Algorithms
@@ -64,16 +65,24 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
   </tr>
 </table>
 
-##### Breadth-firts Search
+##### Breadth-first Search
 
 <table>
   <tr>
-    <td><img width="300" float="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Breadth-first-tree.svg/390px-Breadth-first-tree.svg.png"/></td>
+    <td><img width="300" float="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Breadth-first-tree.svg/300px-Breadth-first-tree.svg.png"/></td>
   <td>Transverses a Search Tree or Graph by exploring all the nodes at a given level, before proceeding to their children at deeper levels</td>
   </tr>
 </table>
 
-##### Bracnh and Bound
+##### Backtracing
+<table>
+  <tr>
+    <td><img width="300" float="right" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Sudoku_solved_by_bactracking.gif"/></td>
+  <td>Search technique that proceeds the search untill a soution is proved to not be possible along that path, it then takes back steps, one a time, until it finds another node that does not impede a solution and delves into that path, repeating the process</td>
+  </tr>
+</table>
+
+##### Branch and Bound
 
 ##### Hill Climbing
 
