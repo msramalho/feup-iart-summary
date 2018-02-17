@@ -1,2 +1,2 @@
 # feup-iart
-Artificial Intelligence Course - Summaries and Practical Work
+Artificial Intelligence Course - [Summaries](summary) and [Practical Work]()
