@@ -1,7 +1,7 @@
 # Iart Lectures Summary
 
  1. Introduction
- 2. [Problem Solving Methods]()
+ 2. [Problem Solving Methods](problem_solving_methods.MD)
  3. Evolution Algorithms
  4. Knowledge Representation Structures
  5. Uncertain Reasoning
