@@ -41,7 +41,7 @@ Used to represent the value of a given state in accordance to the desired goal.
  
 Either can be transformed into the other by increasing (Graph -> Tree) or decreasing (Tree -> Graph) the number of nodes.
 
-### Algorithms for Week Methods
+### Algoruthims for Week Methods
  * Generate and Test
  * Depth-first Search
  * Breadth-first Search
