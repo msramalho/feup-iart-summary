@@ -13,7 +13,7 @@ clear:-write('\33\[2J').
 % a representação do estado vai incluir também o jogador a jogar, pois neste jogo é importante para efeitos de avaliação do estado
 
 % representação de um estado: (NumeroPalitos, Quemjoga)
-estado_inicial((10,max)).
+estado_inicial((50,max)).
 
 % estado final (ter 0 palitos é bom): só interessa para o minimax simples
 estado_final((0,max), 1).
@@ -35,6 +35,7 @@ mmPalito(Valor, Jogada):-
 
 % minimax implementação genérica
 % Estado, jogador, Valor, Jogada
+/* Sem profundidade:
 minimax(E, _, V, _):- estado_final(E, V). % estado final
 minimax(E, max, Valor, Jogada):-
 	findall(E2, sucessor(E, max, E2), LSucessores), % expandir o nó
@@ -52,4 +53,42 @@ min_val([E], V, E):-minimax(E, max, V, _).
 min_val([E1|Es], V, Me):- % MelhorEstado
 	minimax(E1, max, V1, _),
 	min_val(Es, V2, E2),
+	(V1 < V2, !, V = V1, Me = E1; V = V2, Me = E2). */
+
+
+
+
+
+mmPalitoProfundidade(Valor, Jogada):-
+	estado_inicial(I),
+	minimax(I, max, 3, Valor, Jogada).
+
+
+% como limitar a profundidade? é necessário função de avaliação
+avalia((N, max), V):- % sempre da perspetiva do max
+	(1 is N mod 4, !, V = 0; V = 1).
+avalia((N, min), V):- % sempre da perspetiva do max
+	(1 is N mod 4, !, V = 1; V = 0).
+
+% com profundidade
+minimax(E, _, _, V, _):- estado_final(E, V). % estado final
+minimax(E, _, 0, V, _):- avalia(E, V). % estado final
+minimax(E, max, P, Valor, Jogada):-
+	findall(E2, sucessor(E, max, E2), LSucessores), % expandir o nó
+	P1 is P - 1,
+	max_val(LSucessores, P1, Valor, Jogada). % Jogada é o melhor estado de LSucessores
+minimax(E, min, P, Valor, Jogada):-
+	findall(E2, sucessor(E, min, E2), LSucessores), % expandir o nó
+	P1 is P - 1,
+	min_val(LSucessores, P1, Valor, Jogada). % Jogada é o melhor estado de LSucessores
+
+max_val([E], P, V, E):-minimax(E, min, P, V, _).
+max_val([E1|Es], P, V, Me):- % MelhorEstado
+	minimax(E1, min, P, V1, _),
+	max_val(Es, P, V2, E2),
+	(V1 > V2, !, V = V1, Me = E1; V = V2, Me = E2).
+min_val([E], P, V, E):-minimax(E, max, P, V, _).
+min_val([E1|Es], P, V, Me):- % MelhorEstado
+	minimax(E1, max, P, V1, _),
+	min_val(Es, P, V2, E2),
 	(V1 < V2, !, V = V1, Me = E1; V = V2, Me = E2).
