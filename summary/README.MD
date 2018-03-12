@@ -2,7 +2,7 @@
 
  1. Introduction
  2. [Problem Solving Methods](problem_solving_methods.MD)
- 3. Evolution Algorithms
+ 3. [Evolution Algorithms](evolution_algorithms.MD)
  4. Knowledge Representation Structures
  5. Uncertain Reasoning
  6. Knowledge Based Systems
