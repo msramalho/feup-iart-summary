@@ -3,9 +3,9 @@
 [back to index](README.MD)
 
 Minitest1 (at the end):
- * [Problem 1 - weak methods]()
- * [Problem 2 - A*]()
- * [Problem 3 - minimax alpha-beta]()
+ * [Problem 1 - weak methods](#problem-1---weak-methods)
+ * [Problem 2 - A*](#problem-2---a)
+ * [Problem 3 - minimax alpha-beta](#problem-3---minimax-alpha-beta)
 
 ## Production Systems
 Systems that describe a set of rules (*productions*) about behaviour. It represents a mechanism of goal finding through _if-then rules_ or _condition-action rules_ or _situation-action rules_ or just _productions_. Eg: Knowledge Based Systems (KBS).
@@ -107,5 +107,30 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 # Minitest 1
 
 ### Problem 1 - weak methods
+Comapre in terms of complexity and characteristics the search strategies of: **depth first search** (dfs), **breadth first search** (bfs), **iterative deepening** (id):
+
+|     | Time complexity                                                            | Space complexity                                                           | Complete  (guaranteed to find a solution) | Optimal (guaranteed to find the best solution) |
+|-----|----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------------------------------------------|------------------------------------------------|
+| dfs | r^m                                                                        | r * m (if it expands all sucessors before choosing the first), m otherwise | no                                        | no                                             |
+| bfs | r^(p+1) (because it expands all the successors before navigating sideways) | same as time complexity (r^(p+1))                                          | yes                                       | yes (if the utility is the length of the path) |
+| id  | r^p (because it does not expand the next successors)                       | same as dfs space complexity (r * m if...)                                 | yes                                       | yes (if the utility is the length of the path) |
+
 ### Problem 2 - A*
+Problem from figure 2.2 in [Intelligent Systems for Engineering: A Knowledge-based Approach](https://books.google.pt/books?id=hZLwBwAAQBAJ&pg=PR1#v=onepage&q&f=false). 
+
+**Question:** Using A* on the field lots, what is the content of the `openList` and `closedList` right after node **4** is expanded? How is the next node choosen in A*?
+
+**Answer:** `openList = [2,5,6]` and `closedList = [1,3,4]`. A* chooses the next node from `openList` that has the lowest **f*** value. Or the left one, if they have the same **f*** values.
+
+<p align="center">
+  <img src="/minitestes/images/a_star.png" height="500">
+</p>
+
 ### Problem 3 - minimax alpha-beta
+
+**Question:** Given a tree of `r = 2` (branching factor) and  `m = 2` (tree depth), with node values of 5,3,2,7, what are the values of α and β for each tree node and specify if all the tree nodes are visited.
+
+**Answer:** node with value `7` is cut and the values of α and β can be visualized [here](http://proof.github.io/minimax/#tree=KCg1LDMpLCgyLDcpKQ%3D%3D). 
+
+
+
