@@ -5,8 +5,11 @@ Previous years:
 * [Exercise 2 2013](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2013_mt1.pdf)
 
 ### 2017/2018
-
-#### Problem 1
+ * [Problem 1 - container]()
+ * [Problem 2 - maximize function]()
+ 
+ 
+#### Problem 1 - container
 Consider a container with **capacity = 100t**. Objects are represented as `(Object, Weight, Value)`.
 
 * Objects:`(A, 10, 20)`, `(B, 70, 60)`, `(C, 30, 80)`, `(D, 80, 100)`
@@ -93,3 +96,7 @@ Consider a container with **capacity = 100t**. Objects are represented as `(Obje
    * `C5'': fitness(1100) = [1 1 0 0] .* [10, 70, 30, 80] - max(2.67, 1.25) = 80 - 2.67 = 77.33 = 77`
    
 1. The answer is: Objects B and C will go into the container (the best individual of this generation is **C1''**)
+
+---
+
+#### Problem 2 - maximize function
