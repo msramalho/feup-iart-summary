@@ -1,6 +1,6 @@
 <h1 align="center">Problem Solving Methods</h1>
 
-[back to index](../README.MD)
+[back to index](README.MD)
 
 Minitest1 (at the end):
  * [Problem 1 - weak methods](#problem-1---weak-methods)

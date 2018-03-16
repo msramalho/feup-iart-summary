@@ -1,6 +1,6 @@
 # Evolutionary Algorithms
 
-[back to index](../README.MD)
+[back to index](README.MD)
 
 Previous years:
 * [Exercise 2 2012](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2012_mt1.pdf) (only the problem)
