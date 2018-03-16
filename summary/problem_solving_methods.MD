@@ -2,6 +2,11 @@
 
 [back to index](README.MD)
 
+Minitest1 (at the end):
+ * [Problem 1 - weak methods]()
+ * [Problem 2 - A*]()
+ * [Problem 3 - minimax alpha-beta]()
+
 ## Production Systems
 Systems that describe a set of rules (*productions*) about behaviour. It represents a mechanism of goal finding through _if-then rules_ or _condition-action rules_ or _situation-action rules_ or just _productions_. Eg: Knowledge Based Systems (KBS).
 
@@ -97,4 +102,10 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 ##### Means-Ends Analysis
 
 
-## Informed Methods
+---
+
+# Minitest 1
+
+### Problem 1 - weak methods
+### Problem 2 - A*
+### Problem 3 - minimax alpha-beta
