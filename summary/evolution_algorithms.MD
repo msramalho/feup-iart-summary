@@ -1,12 +1,12 @@
 # Evolutionary Algorithms
 
 Previous years: 
-* [Exercise 2 2012](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2012_mt1.pdf)
-* [Exercise 2 2013](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2013_mt1.pdf)
+* [Exercise 2 2012](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2012_mt1.pdf) (only the problem)
+* [Exercise 2 2013](https://github.com/msramalho/feup-iart-summary/blob/master/minitestes/2013_mt1.pdf) (only the problem)
 
 ### 2017/2018
- * [Problem 1 - container](#problem-1---container)
- * [Problem 2 - maximize function](#problem-2---maximize-function)
+ * [Problem 1 - container](#problem-1---container) (with solution)
+ * [Problem 2 - maximize function](#problem-2---maximize-function) (with solution)
  
  
 ### Problem 1 - container
