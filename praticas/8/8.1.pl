@@ -3,6 +3,16 @@ clear:-write('\33\[2J').
 
 % 8.1
 
+frase --> sn(N), sv(N).
+sn(N) --> determinante(N-G), nome(N-G).
+sn(N) --> nome(N-_).
+sv(N) --> verbo(N), sn(_).
+
+
+% Exemplos:
+% frase([o,rui,joga,futebol], []). yes
+% frase([os,rui,joga,futebol], []). no
+
 %%%
 % gramática
 %
