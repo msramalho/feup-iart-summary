@@ -5,15 +5,22 @@ clear:-write('\33\[2J').
 % N de número
 % G de género
 % S de sujeito
+% A de ação
+% S de sujeito
+% Ob de objeto
+
 frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob).
 sn(N, S) --> determinante(N-G), nome(N-G, S).
 sn(N, S) --> nome(N-_, S).
+sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N-G), nome(N-G, Ob). % Nota 1
 sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
 
+% Nota
+% 1 - as chavetas são código prolog não DCG, neste caso é um cut para que o joão gosta morangos não seja válidas
 
 % Exemplos:
-% frase([o,rui,joga,futebol], []). yes
-% frase([os,rui,joga,futebol], []). no
+% frase(A, S, Ob, [o,rui,joga,futebol], []). yes
+% frase(A, S, Ob, [os,rui,joga,futebol], []). no
 
 %%%
 % gramática
