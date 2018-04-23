@@ -9,11 +9,11 @@ clear:-write('\33\[2J').
 % S de sujeito
 % Ob de objeto
 
-frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob).
+frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob, S).
 sn(N, S) --> determinante(N-G), nome(N-G, S).
 sn(N, S) --> nome(N-_, S).
-sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N1-G1), nome(N1-G1, Ob). % Nota 1
-sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
+sv(N, gostar, Ob, S) --> verbo(N, gostar, S), {!}, proposicao(N1-G1), nome(N1-G1, Ob). % Nota 1
+sv(N, A, Ob, S) --> verbo(N, A, S), sn(_, Ob).
 
 concorda_frase(A, S, Ob):-
 	P =.. [A, S, Ob], % link 1, Nota 2
@@ -61,13 +61,13 @@ nome(p-m, bolacha) --> [bolachas].
 nome(p-m, humano) --> [humanos].
 nome(p-f, pessoa) --> [pessoas].
 
-verbo(s, jogar) --> [joga].
-verbo(p, jogar) --> [jogam].
-verbo(s, gostar) --> [gosta].
-verbo(p, gostar) --> [gostam].
-verbo(s, comer) --> [come].
-verbo(p, comer) --> [comem].
-verbo(p, ser) --> [sao].
+verbo(s, jogar, S) --> [joga], {humano(S)}. % nota 1
+verbo(p, jogar, S) --> [jogam], {humano(S)}. % nota 1
+verbo(s, gostar, _) --> [gosta].
+verbo(p, gostar, _) --> [gostam].
+verbo(s, comer, _) --> [come].
+verbo(p, comer, _) --> [comem].
+verbo(p, ser, _) --> [sao].
 
 %%%
 % base de dados
