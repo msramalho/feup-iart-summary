@@ -16,12 +16,16 @@ sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N-G), nome(N-G, Ob). % N
 sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
 
 concorda_frase(A, S, Ob):-
-	P =.. [A, S, Ob],
+	P =.. [A, S, Ob], % link 1, Nota 2
 	(P, !, write(concordo); write(discordo)).
 
-% Nota
+% Notas:
 % 1 - as chavetas são código prolog não DCG, neste caso é um cut para que o joão gosta morangos não seja válidas
 % 2 - prolog é de primeira ordem e não de segunda, não há relações entre objetos que sejam quantificadores, é preciso operador extra-lógico univ
+
+% Links:
+% 1- http://www.swi-prolog.org/pldoc/doc_for?object=(%3D..)/2
+
 % Exemplos:
 % frase(A, S, Ob, [o,rui,joga,futebol], []). yes
 % frase(A, S, Ob, [os,rui,joga,futebol], []). no
