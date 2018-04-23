@@ -15,12 +15,17 @@ sn(N, S) --> nome(N-_, S).
 sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N-G), nome(N-G, Ob). % Nota 1
 sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
 
+concorda_frase(A, S, Ob):-
+	P =.. [A, S, Ob],
+	(P, !, write(concordo); write(discordo)).
+
 % Nota
 % 1 - as chavetas são código prolog não DCG, neste caso é um cut para que o joão gosta morangos não seja válidas
-
+% 2 - prolog é de primeira ordem e não de segunda, não há relações entre objetos que sejam quantificadores, é preciso operador extra-lógico univ
 % Exemplos:
 % frase(A, S, Ob, [o,rui,joga,futebol], []). yes
 % frase(A, S, Ob, [os,rui,joga,futebol], []). no
+% frase(A, S, Ob, [o,rui,joga,futebol], []), concorda_frase(A, S, Ob). yes
 
 %%%
 % gramática
