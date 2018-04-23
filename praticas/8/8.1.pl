@@ -30,6 +30,7 @@ concorda_frase(A, S, Ob):-
 % frase(A, S, Ob, [o,rui,joga,futebol], []). yes
 % frase(A, S, Ob, [os,rui,joga,futebol], []). no
 % frase(A, S, Ob, [o,rui,joga,futebol], []), concorda_frase(A, S, Ob). yes
+% frase(A, S, Ob, [o, elefante, joga, futebol], []).
 
 %%%
 % gramática
