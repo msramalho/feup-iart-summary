@@ -12,7 +12,7 @@ clear:-write('\33\[2J').
 frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob).
 sn(N, S) --> determinante(N-G), nome(N-G, S).
 sn(N, S) --> nome(N-_, S).
-sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N-G), nome(N-G, Ob). % Nota 1
+sv(N, gostar, Ob) --> verbo(N, gostar), {!}, proposicao(N1-G1), nome(N1-G1, Ob). % Nota 1
 sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
 
 concorda_frase(A, S, Ob):-
