@@ -6,7 +6,7 @@ clear:-write('\33\[2J').
 frase --> sn(N), sv(N).
 sn(N) --> determinante(N-G), nome(N-G).
 sn(N) --> nome(N-_).
-sv(N) --> verbo(N), sn(_).
+sv(N) --> verbo(N, A), sn(_).
 
 
 % Exemplos:
@@ -43,13 +43,13 @@ nome(p-m) --> [bolachas].
 nome(p-m) --> [humanos].
 nome(p-f) --> [pessoas].
 
-verbo(s) --> [joga].
-verbo(p) --> [jogam].
-verbo(s) --> [gosta].
-verbo(p) --> [gostam].
-verbo(s) --> [come].
-verbo(p) --> [comem].
-verbo(p) --> [sao].
+verbo(s, jogar) --> [joga].
+verbo(p, jogar) --> [jogam].
+verbo(s, gostar) --> [gosta].
+verbo(p, gostar) --> [gostam].
+verbo(s, comer) --> [come].
+verbo(p, comer) --> [comem].
+verbo(p, ser) --> [sao].
 
 %%%
 % base de dados
