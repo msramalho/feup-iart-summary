@@ -2,11 +2,13 @@ clear:-write('\33\[2J').
 % 8
 
 % 8.1
-
-frase --> sn(N), sv(N).
-sn(N) --> determinante(N-G), nome(N-G).
-sn(N) --> nome(N-_).
-sv(N) --> verbo(N, A), sn(_).
+% N de número
+% G de género
+% S de sujeito
+frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob).
+sn(N, S) --> determinante(N-G), nome(N-G, S).
+sn(N, S) --> nome(N-_, S).
+sv(N, A, Ob) --> verbo(N, A), sn(_, Ob).
 
 
 % Exemplos:
@@ -24,24 +26,24 @@ determinante(s-f) --> [a].
 preposicao(_) --> [de].
 preposicao(s-f) --> [da].
 
-nome(p-m) --> [rapazes].
-nome(s-m) --> [rapaz].
-nome(s-m) --> [rui].
-nome(s-m) --> [luis].
-nome(s-f) --> [rita].
-nome(s-f) --> [ana].
-nome(s-f) --> [maria].
-nome(s-m) --> [elefante].
-nome(p-m) --> [caes].
-nome(p-m) --> [gatos].
-nome(s-m) --> [cao].
-nome(s-m) --> [gato].
-nome(s-m) --> [futebol].
-nome(p-m) --> [morangos].
-nome(p-m) --> [amendoins].
-nome(p-m) --> [bolachas].
-nome(p-m) --> [humanos].
-nome(p-f) --> [pessoas].
+nome(p-m, rapaz) --> [rapazes].
+nome(s-m, rapaz) --> [rapaz].
+nome(s-m, rui) --> [rui].
+nome(s-m, luis) --> [luis].
+nome(s-f, rita) --> [rita].
+nome(s-f, ana) --> [ana].
+nome(s-f, maria) --> [maria].
+nome(s-m, elefante) --> [elefante].
+nome(p-m, cao) --> [caes].
+nome(p-m, gato) --> [gatos].
+nome(s-m, cao) --> [cao].
+nome(s-m, gato) --> [gato].
+nome(s-m, futebol) --> [futebol].
+nome(p-m, morango) --> [morangos].
+nome(p-m, amendoim) --> [amendoins].
+nome(p-m, bolacha) --> [bolachas].
+nome(p-m, humano) --> [humanos].
+nome(p-f, pessoa) --> [pessoas].
 
 verbo(s, jogar) --> [joga].
 verbo(p, jogar) --> [jogam].
