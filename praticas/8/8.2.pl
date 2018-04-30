@@ -61,6 +61,7 @@ nome(p-m, amendoim) --> [amendoins].
 nome(p-m, bolacha) --> [bolachas].
 nome(p-m, humano) --> [humanos].
 nome(p-f, pessoa) --> [pessoas].
+nome(p-m, homen) --> [homens].
 
 verbo(s, jogar, S) --> [joga], {humano(S)}. % nota 1
 verbo(p, jogar, S) --> [jogam], {humano(S)}. % nota 1
@@ -107,23 +108,27 @@ ser(X, humano) :- humano(X).
 %%%
 % gramática
 %
-
-pron_inter(_-_) --> [quem].
-pron_inter(p-_) --> [quais].
-pron_inter(p-m) --> [quantos].
-pron_inter(p-f) --> [quantas].
+% ql is qualitative and qt is quantitative
+pron_inter(_-_, ql) --> [quem].
+pron_inter(p-_, qt) --> [quais].
+pron_inter(p-m, qt) --> [quantos].
+pron_inter(p-f, qt) --> [quantas].
 
 pronome(_) --> [que].
 
 
 % DCG
 
-frase_i --> si(N), sv(N, _, _, _).
-si(N) --> pron_inter(N-G), sni(N-G).
-si(N) --> pron_inter(N-_).
-sni(N-G) --> determinante(N-G), nome(N-G, _), [que].
-sni(N-G) --> nome(N-G, _).
+frase_i(Q, A, At, Ob) --> si(N, Q, At), sv(N, A, Ob, _).
+si(N, Q, At) --> pron_inter(N-G, Q), sni(N-G, At).
+si(N, Q, _) --> pron_inter(N-_, Q). % Q is ql or at
+sni(N-G, At) --> determinante(N-G), nome(N-G, At), [que]. % get the attribute from the name
+sni(N-G, _) --> nome(N-G, _).
 
 
-
+% Example:
+% frase_i(Q, A, At, Ob, [quem, gosta, de, morangos], []).
+% Q = ql, A = gostar, At = _, Ob = morango
+% frase_i(Q, A, At, Ob, [quantos, homens, gostam, de, morangos], []).
+% Q = qt, A = gostar, At = homens, Ob = morango
 
