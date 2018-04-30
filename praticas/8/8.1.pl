@@ -40,8 +40,8 @@ determinante(s-m) --> [o].
 determinante(p-m) --> [os].
 determinante(s-f) --> [a].
 
-preposicao(_) --> [de].
-preposicao(s-f) --> [da].
+proposicao(_) --> [de].
+proposicao(s-f) --> [da].
 
 nome(p-m, rapaz) --> [rapazes].
 nome(s-m, rapaz) --> [rapaz].

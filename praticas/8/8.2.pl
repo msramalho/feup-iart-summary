@@ -40,8 +40,8 @@ determinante(s-m) --> [o].
 determinante(p-m) --> [os].
 determinante(s-f) --> [a].
 
-preposicao(_) --> [de].
-preposicao(s-f) --> [da].
+proposicao(_) --> [de].
+proposicao(s-f) --> [da].
 
 nome(p-m, rapaz) --> [rapazes].
 nome(s-m, rapaz) --> [rapaz].
@@ -120,7 +120,7 @@ pronome(_) --> [que].
 
 frase_i --> si(N), sv(N, _, _, _).
 si(N) --> pron_inter(N-G), sni(N-G).
-si(N) --> pron_inter(N-G).
+si(N) --> pron_inter(N-_).
 sni(N-G) --> determinante(N-G), nome(N-G, _), [que].
 sni(N-G) --> nome(N-G, _).
 
