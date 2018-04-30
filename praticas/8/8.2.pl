@@ -102,6 +102,7 @@ ser(rui, rapaz).
 ser(X, humano) :- humano(X).
 
 
+
 % 8.2
 % extensão feita para 8.2 -> inclui sintagma verbal
 
@@ -132,3 +133,27 @@ sni(N-G, _) --> nome(N-G, _).
 % frase_i(Q, A, At, Ob, [quantos, homens, gostam, de, morangos], []).
 % Q = qt, A = gostar, At = homens, Ob = morango
 
+
+responde(Q, A, At, Ob):-
+	var(At), % fail if At is not instantiated
+	P =.. [A, S, Ob], % create functior from action
+	findall(S, P, L), % find all elements S that respect P and insert into L
+	(Q = ql, !, write(L) % if qualitative print the list
+	;
+	length(L, N), write(N)). % if quantitative print the number
+
+% if not attribute is given
+reponde(Q, A, At, Ob):-
+	nonvar(At),
+	P =.. [A, S, Ob],
+	findall(S, (P, ser(S, At)), L),
+	(Q = ql, !, write(L) % if qualitative print the list
+	;
+	length(L, N), write(N)). % if quantitative print the number
+
+% example of answer
+% frase_i(Q, A, At, Ob, [quantos, humanos, gostam, de, morangos], []), responde(Q, A, At, Ob).
+% 3
+% Q = qt,
+% A = gostar,
+% Ob = morango
