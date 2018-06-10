@@ -7,6 +7,12 @@ Minitest1 (at the end):
  * [Problem 2 - A*](#problem-2---a)
  * [Problem 3 - minimax alpha-beta](#problem-3---minimax-alpha-beta)
 
+## Relevant Exam stuff
+#### Heurística Admissível
+TODO
+#### Heurística Consistente
+TODO
+
 ## Production Systems
 Systems that describe a set of rules (*productions*) about behaviour. It represents a mechanism of goal finding through _if-then rules_ or _condition-action rules_ or _situation-action rules_ or just _productions_. Eg: Knowledge Based Systems (KBS).
 
