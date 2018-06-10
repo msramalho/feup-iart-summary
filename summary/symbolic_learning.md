@@ -1,5 +1,7 @@
 # Symbolic Learning
 
+[back to index](../README.md)
+
 ## ID3 
 Algorithm for induction learning by [Ross Quinlan](http://www.rulequest.com/Personal/). Generates Decision Trees.
  * Uses **Entropy** as the decision variable for branching a given tree node, until it has 0 entropy.
