@@ -1,7 +1,7 @@
 
 <h1 align="center">Uncertain Reasoning</h1>
 
-[back to index](README.MD)
+[back to index](../README.md)
 
 ## Fuzzy Sets
 
