@@ -9,8 +9,3 @@
  7. Computational Natural Language
  8. [Symbolic Learning](summary/SymbolicLearning.md)
  9. Artificial Neural Networks
-
-Teachers:
- * Professor Eugénio Oliveira eco@fe.up.pt
- * Doutora Ana Paula Rocha arocha@fe.up.pt
- * Doutor Henrique Cardoso hlc@fe.up.pt
