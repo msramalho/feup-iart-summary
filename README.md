@@ -7,5 +7,5 @@
  5. [Uncertain Reasoning](summary/uncertain_reasoning.MD) (MT2 exercises)
  6. Knowledge Based Systems
  7. Computational Natural Language
- 8. [Symbolic Learning](summary/SymbolicLearning.md)
+ 8. [Symbolic Learning](summary/symbolic_learning.md)
  9. Artificial Neural Networks
