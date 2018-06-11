@@ -2,10 +2,16 @@
 
 [back to index](../README.md)
 
-## Question and Answer Template:
-The contributors are sorted by first commit on the question.
+## Rules of Conduct
+ * The contributors are sorted by first commit on the question.
+ * The question in each topic are sorted from most recent (newest) to least recent (oldest). If same topic and same year, then ascending order of `Question_number`
+ * Answers may be improved
+ * Different answers can be given
+ * If possible upload missing PDFs to the [exams folder](../exames/)
+ * Do not use big headings in answers
+ * Avoid large images to make this printable
 
-The question in each topic are sorted from most recent (newest) to least recent (oldest). If same topic and same year, then ascending order of `Question_number`
+## Question and Answer Template:
 
 ```markdown
 ### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf)
@@ -42,7 +48,7 @@ This is the first answer. If there is doubt then multiple can exist
 Construiu-se uma rede neuronal com **30** neurónios de entrada, 1 camada escondida com 20 neurónios, e 2 neurónios na camada de saída. Os neurónios de cada camada ligam a todos os neurónios da camada seguinte. Em termos teóricos, quantos exemplos de treino são necessários para que a rede consiga generalizar? 
 
 #### Answer 1:
-Se considerarmos o paralelismo para com sistemas de equações, em que:
+Se considerarmos o paralelismo entre arquitetura e treino de redes neuronais para com sistemas de equações, em que:
  1. o número de ligações independentes = nº variáveis
  2. nº saídas x nº exemplos = nº equações
  
