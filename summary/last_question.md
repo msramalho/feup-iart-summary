@@ -8,7 +8,7 @@ The contributors are sorted by first commit on the question.
 The question in each topic are sorted from most recent (newest) to least recent (oldest). If same topic and same year, then ascending order of `Question_number`
 
 ```markdown
-### 20XX/20YY - [Normal|Recurso] - Question_number
+### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf)
 #### Question:
 This is the Question
 
@@ -37,7 +37,7 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 5 - Artificial Neural Networks (ANN)
 
-### 2015/2016 - Normal - g)
+### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf)
 #### Question:
 Construiu-se uma rede neuronal com **30** neurónios de entrada, 1 camada escondida com 20 neurónios, e 2 neurónios na camada de saída. Os neurónios de cada camada ligam a todos os neurónios da camada seguinte. Em termos teóricos, quantos exemplos de treino são necessários para que a rede consiga generalizar? 
 
