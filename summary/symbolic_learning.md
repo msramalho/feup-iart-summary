@@ -3,6 +3,7 @@
 [back to index](../README.md)
 
 ## Ti-nspire
+Useful functions for the calculations
 ```lua
 r(x):=x.log2(x)
 rr(x,y):=r(x)+r(y)
