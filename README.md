@@ -9,3 +9,4 @@
  7. Computational Natural Language
  8. [Symbolic Learning](summary/symbolic_learning.md)
  9. Artificial Neural Networks
+ 10. [Final Question of the Exam - chapa 6/7](summary/last_question.md) catálogo de perguntas e respostas que já saíram, agrupadas por tema.
