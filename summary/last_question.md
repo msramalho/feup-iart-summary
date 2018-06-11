@@ -5,10 +5,10 @@
 ## Question and Answer Template:
 The contributors are sorted by first commit on the question.
 
-The question in each topic are sorted from most recent (newest) to least recent (oldest).
+The question in each topic are sorted from most recent (newest) to least recent (oldest). If same topic and same year, then ascending order of `Question_number`
 
 ```markdown
-#### 20XX/20YY - [Normal|Recurso]
+#### 20XX/20YY - [Normal|Recurso] - Question_number
 ##### This is the Question
 This is the answer
 
@@ -29,4 +29,3 @@ This is the answer
 ## Topic 4 - NLP
 
 ## Topic 5 - ANN
-
