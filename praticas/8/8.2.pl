@@ -1,13 +1,5 @@
 clear:-write('\33\[2J').
-% 8
-
-% 8.1
-% N de número
-% G de género
-% S de sujeito
-% A de ação
-% S de sujeito
-% Ob de objeto
+% N de número, G de género, S de sujeito, A de ação, S de sujeito, Ob de objeto
 
 frase(A, S, Ob) --> sn(N, S), sv(N, A, Ob, S).
 sn(N, S) --> determinante(N-G), nome(N-G, S).
@@ -32,10 +24,7 @@ concorda_frase(A, S, Ob):-
 % frase(A, S, Ob, [o,rui,joga,futebol], []), concorda_frase(A, S, Ob). yes
 % frase(A, S, Ob, [o, elefante, joga, futebol], []).
 
-%%%
 % gramática
-%
-
 determinante(s-m) --> [o].
 determinante(p-m) --> [os].
 determinante(s-f) --> [a].
@@ -71,10 +60,7 @@ verbo(s, comer, _) --> [come].
 verbo(p, comer, _) --> [comem].
 verbo(p, ser, _) --> [sao].
 
-%%%
 % base de dados
-%
-
 humano(rapaz).
 humano(rui).
 humano(maria).
@@ -106,9 +92,7 @@ ser(X, humano) :- humano(X).
 % 8.2
 % extensão feita para 8.2 -> inclui sintagma verbal
 
-%%%
 % gramática
-%
 % ql is qualitative and qt is quantitative
 pron_inter(_-_, ql) --> [quem].
 pron_inter(p-_, qt) --> [quais].
@@ -117,9 +101,7 @@ pron_inter(p-f, qt) --> [quantas].
 
 pronome(_) --> [que].
 
-
 % DCG
-
 frase_i(Q, A, At, Ob) --> si(N, Q, At), sv(N, A, Ob, _).
 si(N, Q, At) --> pron_inter(N-G, Q), sni(N-G, At).
 si(N, Q, _) --> pron_inter(N-_, Q). % Q is ql or at
@@ -132,8 +114,6 @@ sni(N-G, _) --> nome(N-G, _).
 % Q = ql, A = gostar, At = _, Ob = morango
 % frase_i(Q, A, At, Ob, [quantos, homens, gostam, de, morangos], []).
 % Q = qt, A = gostar, At = homens, Ob = morango
-
-
 responde(Q, A, At, Ob):-
 	var(At), % fail if At is not instantiated
 	P =.. [A, S, Ob], % create functior from action
