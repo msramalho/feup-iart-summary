@@ -13,7 +13,7 @@ TODO
 #### Heurística Consistente
 TODO
 
-2.  The general search algorithm
+1.  The general search algorithm
     
 
     *   **Problem-solving agents**: find sequence of actions that achieve goals.
@@ -21,7 +21,7 @@ TODO
     *   **search strategy**: tells which state to expand next.
     *   **fringe** or **frontier**: discovered states to be expanded
     
-3.  Some search strategies:
+2.  Some search strategies:
     1.  Evaluation criteria:
         1.  **completeness**: will it find a solution if one exists?
         2.  **time efficiency**:
