@@ -3,7 +3,9 @@
 [back to index](../README.md)
 
 ## Question and Answer Template:
-The contributors are sorted by first commit on the question
+The contributors are sorted by first commit on the question.
+
+The question in each topic are sorted from most recent (newest) to least recent (oldest).
 
 ```markdown
 #### 20XX/20YY - [Normal|Recurso]
