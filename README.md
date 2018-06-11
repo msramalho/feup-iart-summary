@@ -7,3 +7,9 @@
  8. [Symbolic Learning](summary/symbolic_learning.md)
  9. Artificial Neural Networks TODO
  10. [Final Question of the Exam - chapa 6/7](summary/last_question.md) catálogo de perguntas e respostas que já saíram, agrupadas por tema.
+
+---
+
+<h3><i>In Memoriam:</i></h3>
+
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Comic_Sans_sample.svg/2000px-Comic_Sans_sample.svg.png" width="500px"/></p>
