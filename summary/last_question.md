@@ -34,10 +34,10 @@ This is the first answer. If there is doubt then multiple can exist
 # Topic 3 - Uncertain Reasoning
 
 
-# Topic 4 - NLP
+# Topic 4 - Natural Language Processing (NLP)
 
 
-# Topic 5 - ANN
+# Topic 5 - Artificial Neural Networks (ANN)
 
 #### 2015/2016 - Normal - g)
 ##### Question:
@@ -51,7 +51,7 @@ Então, tentando verificar a equação `nº saídas x nº exemplos >= nº ligaç
 
 Em termos teóricos, são necessários pelo menos 320 exemplos de treino para que a rede consiga generalizar.
 
-[[slides](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/7_RN_DL.pdf) slide 42]
+[[slide 42](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/7_RN_DL.pdf)]
 
 [@msramalho]
 
