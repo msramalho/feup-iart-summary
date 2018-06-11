@@ -19,7 +19,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    
    * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Somatório de `r(x)` para cada valor possível para o atributo (ignora a classe), caso um atributo tenha 1 ou mais valores indefinidos, esses contam como um valor extra ("indefinido")
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Is(a_i)=\sum_{i=1}^{n}p(a_i))\l\log_{2}(p(a_i))"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Is(a_i)=\sum_{i=1}^{n}p(a_i))*\log_{2}(p(a_i))"/></p>
    
    
    * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
@@ -27,6 +27,9 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    * **ganho**
    
    * **razão do ganho**: GR(C|A)=Ganho(C|A)/Info_separacao(A) 
+   
+   * **razão do erro**: 
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>
    
    
 
