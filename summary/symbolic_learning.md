@@ -2,6 +2,17 @@
 
 [back to index](../README.md)
 
+## Exercises Resolution steps
+1. Escrever a nomenclatura:
+```
+r(x) = x.log2(x)
+r(x1,x2,...,xn) = sum(1,n)r(x)
+```
+2. Usar as fórmulas
+    * **informação média** [entropia] (que era um somatório por cada atributo, mas que dava sempre o mesmo a não ser que faltassem valores) -> somatório com os rácios de cada classe
+    * **informação de separação** que é o somatório, para cada atributo, -> com o rácio de cada valor possível para esse atributo
+    * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
+
 ## Ti-nspire
 Useful functions for the calculations
 ```lua
