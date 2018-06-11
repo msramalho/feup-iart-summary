@@ -7,11 +7,67 @@ Minitest1 (at the end):
  * [Problem 2 - A*](#problem-2---a)
  * [Problem 3 - minimax alpha-beta](#problem-3---minimax-alpha-beta)
 
-## Relevant Exam stuff
+# Relevant Exam stuff
 #### Heurística Admissível
 TODO
 #### Heurística Consistente
 TODO
+
+2.  The general search algorithm
+    
+
+    *   **Problem-solving agents**: find sequence of actions that achieve goals.
+    *   Operators **expand** a state: generate new states from present ones.
+    *   **search strategy**: tells which state to expand next.
+    *   **fringe** or **frontier**: discovered states to be expanded
+    
+3.  Some search strategies:
+    1.  Evaluation criteria:
+        1.  **completeness**: will it find a solution if one exists?
+        2.  **time efficiency**:
+        3.  **space efficiency**:
+        4.  **optimality of solution**:
+    2.  **Uninformed** or **blind** searches:
+        1.  **Breadth-first**: (FIFO queuing strategy)
+            *   complete: yes
+            *   time and space: O(branch_factor^depth) (empirically space a larger problem than time)
+            *   optimality: yes, if path cost non-decreasing with depth.
+        2.  **Uniform Cost** (expand lo cost fringe node)
+            *   optimal: yes, if no negative costs
+            *   a generalization of **Breadth-first**.
+        3.  **Depth-first** (uses a stack)
+            *   completeness: no! may go down and not come back
+            *   time: O(branch_factor^depth)
+            *   space: O(depth)
+            *   optimality: no! returns first found, not necessarily ideal
+        4.  **depth-limited** (DFS down to some cutoff)
+            *   completeness: yes, provided solution exists before cutoff
+            *   time: O(branch\_factor^depth\_limit)
+            *   space: O(depth_limit)
+            *   optimality: no!
+        5.  **Iterative Deepening** (successively increasing depth-limited)
+            *   **diameter of state space**: max anticipated path length for most problems.
+            *   completeness: yes (like Breadth-first)
+            *   time: O(branch_factor^diameter)
+            *   space: O(diameter) (like Depth-first)
+            *   optimality: yes (like Breadth-first)
+    3.  **Informed** searches:
+        1.  **Best-first search** (expand nodes according to some cost function)
+            1.  **Greedy search** (expand according to h(n)--cost to goal)
+                *   completeness: no (could go down an endless branch)
+                *   optimality: no (ignores cost from initial node)
+                *   faster (on average) than uninformed algorithm
+            2.  **A* search** (combines uniform-cost search and greedy search)
+                *   expand nodes according to the estimated total cost function, f(n) = g(n) + h(n)
+                *   h(n) must always be optimistic (admissible)
+                *   completeness: yes
+                *   optimality: yes
+                *   optimally efficient: no better algorithm with same knowledge
+        2.  **Heuristic functions**
+            *   Relax the demands of the problem
+
+---
+
 
 ## Production Systems
 Systems that describe a set of rules (*productions*) about behaviour. It represents a mechanism of goal finding through _if-then rules_ or _condition-action rules_ or _situation-action rules_ or just _productions_. Eg: Knowledge Based Systems (KBS).
