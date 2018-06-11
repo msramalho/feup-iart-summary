@@ -28,7 +28,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    * **razão do ganho**: GR(C|A)=Ganho(C|A)/Info_separacao(A) 
    
-   * **razão do erro**: 
+   * **razão do erro**: `e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>
    
    
