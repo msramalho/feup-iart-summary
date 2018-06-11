@@ -14,13 +14,19 @@ r(x) = x.log2(x)
 r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
  3. Definir as fórmulas
-   * **informação média** [entropia] (que era um somatório por cada atributo, mas que dava sempre o mesmo a não ser que faltassem valores) -> somatório com os rácios de cada classe
+   * **informação média** [entropia] para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltassem valores) -> somatório com os rácios de cada classe ->
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Im(C,a)=\sum_{i=1}^{n}p(C_i,a)"/></p>
    
    
-   * **informação de separação** que é o somatório, para cada atributo, -> com o rácio de cada valor possível para esse atributo
+   * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Somatório de `r(x)` para cada valor possível para o atributo (ignora a classe), caso um atributo tenha 1 ou mais valores indefinidos, esses contam como um valor extra ("indefinido")
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Is(a_i)=\sum_{i=1}^{n}p(a_i))\l\log_{2}(p(a_i))"/></p>
    
    
    * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
+   
+   * **ganho**
+   
+   * **razão do ganho**: GR(C|A)=Ganho(C|A)/Info_separacao(A) 
    
    
 
