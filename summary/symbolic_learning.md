@@ -2,6 +2,12 @@
 
 [back to index](../README.md)
 
+## Ti-nspire
+```lua
+r(x):=x.log2(x)
+rr(x,y):=r(x)+r(y)
+```
+
 ## ID3 
 Algorithm for induction learning by [Ross Quinlan](http://www.rulequest.com/Personal/). Generates Decision Trees.
  * Uses **Entropy** as the decision variable for branching a given tree node, until it has 0 entropy.
@@ -16,7 +22,7 @@ Improvement on ID3, Quinlan as well.
  * Can handle discrete values, by establishing interval values
  * Prunes (through pessimistic pruning) by removing trees that do not suficiently contribute to the accuracy of the model
  
- ## Entropy:
+ ## Entropy (aka Average information/Informação média)
  **H(S)** is a measure of the amount of uncertainty in the dataset S.
  
  ![](https://i.imgur.com/w8N4aiw.png)
@@ -26,5 +32,6 @@ Improvement on ID3, Quinlan as well.
  * p(x) – The proportion of the number of elements in class x to the number of elements in set S
 When H(S)=0, the set S is perfectly classified (i.e. all elements in S are of the same class).
  
+ ## TP exercise
  
- ![](https://i.imgur.com/ZDgLbMC.png)
+ ![image from TP classes](https://i.imgur.com/ZDgLbMC.png)
