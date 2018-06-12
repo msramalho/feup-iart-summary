@@ -15,7 +15,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
  3. Definir as fórmulas
    * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltassem valores) -> somatório com os rácios de cada classe ->
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Im(C)=\sum_{i=1}^{n}p(c_i)*\log_{2}(p(c_i))"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C)=\sum_{i=1}^{n}p(c_i)*\log_{2}(p(c_i))"/></p>
    
    
    * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Somatório de `r(x)` para cada valor possível para o atributo (ignora a classe), caso um atributo tenha 1 ou mais valores indefinidos, esses contam como um valor extra ("indefinido")
