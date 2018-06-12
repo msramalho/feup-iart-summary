@@ -1,5 +1,7 @@
 <h1 align="center">Artificial Intelligence Lectures Summary (IART at FEUP)</h1>
 
+Licensed under: GLWT(Good Luck With That) Public [License](license)
+
  1. [Problem Solving Methods](summary/problem_solving_methods.md) (MT1 exercises)
  3. [Evolutionary Algorithms](summary/evolution_algorithms.md) (MT1 exercises)
  5. [Uncertain Reasoning](summary/uncertain_reasoning.md) (MT2 exercises)
