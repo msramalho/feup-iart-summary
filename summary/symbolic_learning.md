@@ -14,7 +14,7 @@ r(x) = x.log2(x)
 r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
  3. Definir as fórmulas
-   * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltassem valores) -> somatório com os rácios de cada classe ->
+   * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltem valores) -> somatório com os rácios de cada classe ->
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C)=\sum_{i=1}^{n}p(c_i)*\log_{2}(p(c_i))"/></p>
    
    
@@ -26,7 +26,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    * **ganho**
    
-   * **razão do ganho**: GR(C|A)=Ganho(C|A)/Info_separacao(A) 
+   * **razão do ganho**: Normalizar o ganho. GR(C|A)=Ganho(C|A)/Info_separacao(A) 
    
    * **razão do erro**: `e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>
