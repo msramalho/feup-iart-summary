@@ -33,6 +33,17 @@ This is the first answer. If there is doubt then multiple can exist
 
 ### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf)
 #### Question:
+No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
+
+#### Answer 1:
+O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais. Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `t`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `t` menor é a probabilidade de a exploração ser beneficiada (face à potenciação). [INCOMPLETE]
+
+[[source1](...), [source2](...)] by [@contributor_to_answer_1, @contributor_to_answer_2, ...]
+
+---
+
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf)
+#### Question:
 Ao aplicar o algoritmo minimax, aplicaram-se os cortes alfa-beta indicados na figura (e só esses). Indique que gamas de valores podem ter os nós da folha.
 
 <p align="center"><img height="150px" src="https://i.imgur.com/fQHhNBc.png"/></p>
