@@ -45,7 +45,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    * **razão do ganho**: Normalizar o ganho.
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?RG(A_i)=\frac{G(C|A_i)}{infoS(C)}"/></p>
    
-   * **razão do erro**: (medida da **confiança** numa folha)`e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
+   * **razão do erro**: (medida da **confiança** numa folha)`e` é o número de exemplos que não pertencem àquela folha e `n` é o número total de exemplos que acabam naquela folha. 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>
    
    
