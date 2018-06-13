@@ -14,7 +14,7 @@
 ## Question and Answer Template:
 
 ```markdown
-### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf)
+### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf) [TEMA]
 #### Question:
 This is the Question
 
@@ -31,7 +31,7 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 1 - Search Methods
 
-### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf)
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
 #### Question:
 No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
 
@@ -51,7 +51,7 @@ Posto isto, a afirmação original torna-se mais clara: a aceitação de um dado
 
 ---
 
-### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf)
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf) [ALFA-BETA]
 #### Question:
 Ao aplicar o algoritmo minimax, aplicaram-se os cortes alfa-beta indicados na figura (e só esses). Indique que gamas de valores podem ter os nós da folha.
 
@@ -80,7 +80,7 @@ Descrever a figura:
 
 # Topic 5 - Artificial Neural Networks (ANN)
 
-### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf)
+### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf) [RNN]
 #### Question:
 Construiu-se uma rede neuronal com **30** neurónios de entrada, 1 camada escondida com 20 neurónios, e 2 neurónios na camada de saída. Os neurónios de cada camada ligam a todos os neurónios da camada seguinte. Em termos teóricos, quantos exemplos de treino são necessários para que a rede consiga generalizar? 
 
