@@ -24,7 +24,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
 >Informação média para identificar Classes Ck no Conjunto C de itens (independente do Atributo)
 
    
-   * **informação de separação**: infoS(A) - o que um dado atributo contribui para a separação da classe. Informação obtida dos resultados de um teste Tj com j=1 a n valores, independentemente de serem ou não da mesma classe. (Não confundir com info(C/Ai))
+   * **informação de separação**: infoS(A) - o que um dado atributo contribui para a separação da classe. Informação obtida dos resultados de um teste Tj com j=1 a n valores, independentemente de serem ou não da mesma classe. (Não confundir com info(C/Ai)). **Nota**: se faltar algum atributo o denominador mantém, mas a soma dos numeradores deixa de ser igual ao denominador (por causa dos que faltam). 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?infoS(C)=-\sum_{i=1}^{n}\frac{C_i}{C}*\log_{2}(\frac{C_i}{C})"/></p>
    
    
