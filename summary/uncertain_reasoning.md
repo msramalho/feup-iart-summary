@@ -12,7 +12,7 @@
 
 `MB(H, E1 & E2) = MB(H, E1) + MB(H, E2) * (1 - MB(H, E1))`
 
-2. Combining hypoteses: 
+2. Combining hypotheses: 
 
 `MB(H1 & H2) = min(MB(H1), MB(H2))`
 

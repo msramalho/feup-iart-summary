@@ -13,25 +13,33 @@ rr(x,y):=r(x)+r(y)
 r(x) = x.log2(x)
 r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
- 3. Definir as fórmulas
-   * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltem valores) -> somatório com os rácios de cada classe ->
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C)=\sum_{i=1}^{n}p(c_i)*\log_{2}(p(c_i))"/></p>
+ 3. Definir as fórmulas (tudo em **bits** (exceto erro))
+   * **entropia**: mede a **pureza** de um conjunto. 
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?H(C/a_k)=\sum_{j=1})^{M_k}p(a_{k,j})*[-\sum_{i=1}^{N}p(C_i|a_{k,j})*\log_2{p(C_i|a_{k,j})}]"/></p>
    
    
-   * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Somatório de `r(x)` para cada valor possível para o atributo (ignora a classe), caso um atributo tenha 1 ou mais valores indefinidos, esses contam como um valor extra ("indefinido")
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(a_i)=\sum_{i=1}^{n}p(a_i)*\log_{2}(p(a_i))"/></p>
+   * **informação média**: Se houver valores indefinidos, o denominador é decrementado (dá sempre o mesmo para todos os atributos a não ser que faltem valores).
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C)=-\sum_{k=1}^{n}p(C_k)*\log_{2}(p(C_k))"/></p>
+   
+>Informação média para identificar Classes Ck no Conjunto C de itens (independente do Atributo)
+
+   
+   * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Informação obtida dos resultados de um teste Tj com j=1 a n valores, independentemente de serem ou não da mesma classe. (Não confundir com info(C/Ai))
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?infoS(C)=-\sum_{i=1}^{n}\frac{C_i}{C}*\log_{2}(\frac{C_i}{C})"/></p>
    
    
-   * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
+   * **entropia de atributo A em relação à classificação no conjunto de treino C**:
    
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C|A_i)=\sum_{j=1}^{n}\frac{Cj}{C}*info(C_j)"/></p>
    
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?E(C|a)=\sum_{j=1}^{M}p(a_j)&space;*&space;\sum_{i=1}^{n}p(c_i|a_j)*\log_{2}(p(c_i|a_j))"/></p>
+   * **ganho de informação**: o que escolher um dado atributo trás de melhoria para a entropia: `G(C|Ai) = info(C) - info(C|Ai)`
    
-   * **ganho**: o que escolher um dado atributo trás de melhoria para a entropia: `E(Classe) - E(Classe|atributo)`
+   > ECO: Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
    
-   * **razão do ganho**: Normalizar o ganho. `RG(C|A)=Ganho(C|A)/info_separação(A)`
+   * **razão do ganho**: Normalizar o ganho.
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?RG(A_i)=\frac{G(C|A_i)}{infoS(C)}"/></p>
    
-   * **razão do erro**: `e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
+   * **razão do erro**: (medida da **confiança** numa folha)`e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>
    
    
@@ -49,17 +57,7 @@ Improvement on ID3, Quinlan as well.
  * Can handle unknown values by extrapolating from the others
  * Can handle discrete values, by establishing interval values
  * Prunes (through pessimistic pruning) by removing trees that do not suficiently contribute to the accuracy of the model
- 
- ## Entropy (aka Average information/Informação média)
- **H(S)** is a measure of the amount of uncertainty in the dataset S.
- 
- ![](https://i.imgur.com/w8N4aiw.png)
- 
- * S – The current (data) set for which entropy is being calculated (changes every iteration of the ID3 algorithm)
- * X – Set of classes in S
- * p(x) – The proportion of the number of elements in class x to the number of elements in set S
-When H(S)=0, the set S is perfectly classified (i.e. all elements in S are of the same class).
- 
+
  ## TP exercise
  
  ![image from TP classes](https://i.imgur.com/ZDgLbMC.png)
