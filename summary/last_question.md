@@ -36,9 +36,18 @@ This is the first answer. If there is doubt then multiple can exist
 No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
 
 #### Answer 1:
-O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais. Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `t`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `t` menor é a probabilidade de a exploração ser beneficiada (face à potenciação). [INCOMPLETE]
+O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais (não é completo nem ótimo, mas combate uma das limitações do hill climbing que é ficar preso em máximos locais). Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `T`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `T` maior é a probabilidade de a exploração ser beneficiada (face à potenciação), ou seja, `T` controla a probabilidade de selecionar estados que se afastam da melhor solução até ao momento. Quando `T=0` é retornado o valor atual. A fórmula que dita a probabilidade de aceitação de um estado é: 
 
-[[source1](...), [source2](...)] by [@contributor_to_answer_1, @contributor_to_answer_2, ...]
+<p align="center"><img heihgt="100px" src="https://latex.codecogs.com/gif.latex?p(x)=e^{\frac{\Delta_h(x)}{T}}"/></p>
+
+Sendo `Δh = h(novo estado)- h(atual)` e `h(x)` é a função heurística de avaliação de um estado `x`. Para estados melhores que o atual, `Δh>0` e quanto maior `Δh` maior será `p(x)`. Para estados iguais ao atual, `Δh=0` => `p(x)=1` (aceita sempre). Para estados piores que o atual, `Δh<0` -> `p(x)<1` sendo que maior `T` faz com que o valor de `Δh` tenha menos efeito e aumenta a probabilidade.
+
+De referir que, dado `p(x)` é tirado um número `r` à sorte entre 0 e 1 e se `p(x)>r`, `x` passa a ser o novo estado atual e repete-se o processo de procurar e avaliar estados até mudar, sendo que `T` vai diminuindo (variações não necessarieamente constantes).
+
+Posto isto, a afirmação original torna-se mais clara: a aceitação de um dado estado depende da sua qualidade - quanto melhor é um estado (em relação ao estado em que se toma a decisão!), maior é a probabilidade de ele ser selecionado (maior `Δh` -> maior `p(x)`) - sendo que a probabilidade de aceitação diminui com o dito arrefecimento, `T`.
+> Nota ECO: SE variação baixar T suficientemente devagar, +provável encontrar um ótimo global.
+
+[] by [@msramalho]
 
 ---
 
