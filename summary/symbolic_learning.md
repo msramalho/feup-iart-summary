@@ -14,19 +14,22 @@ r(x) = x.log2(x)
 r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
  3. Definir as fórmulas
-   * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltassem valores) -> somatório com os rácios de cada classe ->
+   * **informação média** [entropia] mede a **pureza** de um conjunto. Para cada atributo -> das classes em que ele está. Se houver valores indefinidos, o denominador é decrementado. (dá sempre o mesmo para todos os atributos a não ser que faltem valores) -> somatório com os rácios de cada classe ->
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C)=\sum_{i=1}^{n}p(c_i)*\log_{2}(p(c_i))"/></p>
    
    
    * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Somatório de `r(x)` para cada valor possível para o atributo (ignora a classe), caso um atributo tenha 1 ou mais valores indefinidos, esses contam como um valor extra ("indefinido")
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?Is(a_i)=\sum_{i=1}^{n}p(a_i)*\log_{2}(p(a_i))"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(a_i)=\sum_{i=1}^{n}p(a_i)*\log_{2}(p(a_i))"/></p>
    
    
    * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
    
-   * **ganho**
    
-   * **razão do ganho**: GR(C|A)=Ganho(C|A)/Info_separacao(A) 
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?E(C|a)=\sum_{j=1}^{M}p(a_j)&space;*&space;\sum_{i=1}^{n}p(c_i|a_j)*\log_{2}(p(c_i|a_j))"/></p>
+   
+   * **ganho**: o que escolher um dado atributo trás de melhoria para a entropia: `E(Classe) - E(Classe|atributo)`
+   
+   * **razão do ganho**: Normalizar o ganho. `RG(C|A)=Ganho(C|A)/info_separação(A)`
    
    * **razão do erro**: `e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?Re=\frac{e+1}{n+2}"/></p>

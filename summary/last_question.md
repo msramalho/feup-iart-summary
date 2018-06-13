@@ -14,7 +14,7 @@
 ## Question and Answer Template:
 
 ```markdown
-### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf)
+### 20XX/20YY - [Normal|Recurso] - Question_number [pdf](../exames/20XX_N.pdf) [TEMA]
 #### Question:
 This is the Question
 
@@ -31,6 +31,43 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 1 - Search Methods
 
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
+#### Question:
+No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
+
+#### Answer 1:
+O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais (não é completo nem ótimo, mas combate uma das limitações do hill climbing que é ficar preso em máximos locais). Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `T`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `T` maior é a probabilidade de a exploração ser beneficiada (face à potenciação), ou seja, `T` controla a probabilidade de selecionar estados que se afastam da melhor solução até ao momento. Quando `T=0` é retornado o valor atual. A fórmula que dita a probabilidade de aceitação de um estado é: 
+
+<p align="center"><img heihgt="100px" src="https://latex.codecogs.com/gif.latex?p(x)=e^{\frac{\Delta_{h(x)}}{T}}"/></p>
+
+Sendo `Δh = h(novo estado)- h(atual)` e `h(x)` é a função heurística de avaliação de um estado `x`. Para estados melhores que o atual, `Δh>0` e quanto maior `Δh` maior será `p(x)`. Para estados iguais ao atual, `Δh=0` => `p(x)=1` (aceita sempre). Para estados piores que o atual, `Δh<0` -> `p(x)<1` sendo que maior `T` faz com que o valor de `Δh` tenha menos efeito e aumenta a probabilidade.
+
+De referir que, dado `p(x)` é tirado um número `r` à sorte entre 0 e 1 e se `p(x)>r`, `x` passa a ser o novo estado atual e repete-se o processo de procurar e avaliar estados até mudar, sendo que `T` vai diminuindo (variações não necessarieamente constantes).
+
+Posto isto, a afirmação original torna-se mais clara: a aceitação de um dado estado depende da sua qualidade - quanto melhor é um estado (em relação ao estado em que se toma a decisão!), maior é a probabilidade de ele ser selecionado (maior `Δh` -> maior `p(x)`) - sendo que a probabilidade de aceitação diminui com o dito arrefecimento, `T`.
+> Nota ECO: SE variação baixar T suficientemente devagar, +provável encontrar um ótimo global.
+
+[] by [@msramalho]
+
+---
+
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf) [ALFA-BETA]
+#### Question:
+Ao aplicar o algoritmo minimax, aplicaram-se os cortes alfa-beta indicados na figura (e só esses). Indique que gamas de valores podem ter os nós da folha.
+
+<p align="center"><img height="150px" src="https://i.imgur.com/fQHhNBc.png"/></p>
+
+#### Answer 1:
+Descrever a figura: 
+<p align="center"><img height="200px" src="https://i.imgur.com/xeKxUkd.png"/></p>
+
+ * No ramo A, o valor da folha teria de ser >= 3, de forma a que `alpha >= beta`.
+ * No ramo B, o valor da folha teria de ser <= 2, de forma a que `beta <= alpha`.
+ * No ramo C, o valor de uma das folha teria de ser 2 e o da outra <= 2 (se não houvesse a restrição do 2 já na árvore, também podiam ir até 3), de forma a que `beta <= alpha`.
+
+[] by [@msramalho]
+
+---
 
 # Topic 2 - Evolutionary Algorithms
 
@@ -43,7 +80,7 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 5 - Artificial Neural Networks (ANN)
 
-### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf)
+### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf) [RNN]
 #### Question:
 Construiu-se uma rede neuronal com **30** neurónios de entrada, 1 camada escondida com 20 neurónios, e 2 neurónios na camada de saída. Os neurónios de cada camada ligam a todos os neurónios da camada seguinte. Em termos teóricos, quantos exemplos de treino são necessários para que a rede consiga generalizar? 
 
