@@ -24,7 +24,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
 >Informação média para identificar Classes Ck no Conjunto C de itens (independente do Atributo)
 
    
-   * **informação de separação**: Info_separacao(A) - o que um dado atributo contribui para a separação da classe. Informação obtida dos resultados de um teste Tj com j=1 a n valores, independentemente de serem ou não da mesma classe. (Não confundir com info(C/Ai))
+   * **informação de separação**: infoS(A) - o que um dado atributo contribui para a separação da classe. Informação obtida dos resultados de um teste Tj com j=1 a n valores, independentemente de serem ou não da mesma classe. (Não confundir com info(C/Ai))
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?infoS(C)=-\sum_{i=1}^{n}\frac{C_i}{C}*\log_{2}(\frac{C_i}{C})"/></p>
    
    
@@ -34,7 +34,12 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    * **ganho de informação**: o que escolher um dado atributo trás de melhoria para a entropia:
    
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=infoG(C|A_i)-info(C)"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=info(C)-info(C|A_i)"/></p>
+   
+   se faltar conhecer algum valor de um atributo (usar freq dos conhecidos sobre conhecidos + desconhecidos):
+   
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=f(known/total)*info(C)-info(C|A_i)"/></p>
+   
    > ECO: Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
    
    * **razão do ganho**: Normalizar o ganho.
