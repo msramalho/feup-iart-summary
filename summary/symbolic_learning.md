@@ -24,6 +24,9 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    * **entropia de classificação** -> para cada atributo -> somatório dos produtos do rácio de um atributo em relação à classe e da distribuição dos valores desse atributo em relação a esse valor para o atributo
    
+   
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?E(C|a)=\sum_{j=1}^{M}p(a_j)&space;*&space;\sum_{i=1}^{n}p(c_i|a_j)*\log_{2}(p(c_i|a_j))"/></p>
+   
    * **ganho**
    
    * **razão do ganho**: Normalizar o ganho. GR(C|A)=Ganho(C|A)/Info_separacao(A) 
