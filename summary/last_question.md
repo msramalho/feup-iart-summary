@@ -31,6 +31,23 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 1 - Search Methods
 
+### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf)
+#### Question:
+Ao aplicar o algoritmo minimax, aplicaram-se os cortes alfa-beta indicados na figura (e só esses). Indique que gamas de valores podem ter os nós da folha.
+
+<p align="center"><img height="150px" src="https://i.imgur.com/fQHhNBc.png"/></p>
+
+#### Answer 1:
+Descrever a figura: 
+<p align="center"><img height="200px" src="https://i.imgur.com/xeKxUkd.png"/></p>
+
+ * No ramo A, o valor da folha teria de ser >= 3, de forma a que `alpha >= beta`.
+ * No ramo B, o valor da folha teria de ser <= 2, de forma a que `beta <= alpha`.
+ * No ramo C, o valor de uma das folha teria de ser 2 e o da outra <= 2 (se não houvesse a restrição do 2 já na árvore, também podiam ir até 3), de forma a que `beta <= alpha`.
+
+[] by [@msramalho]
+
+---
 
 # Topic 2 - Evolutionary Algorithms
 
