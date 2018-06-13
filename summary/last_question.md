@@ -38,7 +38,7 @@ No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo es
 #### Answer 1:
 O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais (não é completo nem ótimo, mas combate uma das limitações do hill climbing que é ficar preso em máximos locais). Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `T`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `T` maior é a probabilidade de a exploração ser beneficiada (face à potenciação), ou seja, `T` controla a probabilidade de selecionar estados que se afastam da melhor solução até ao momento. Quando `T=0` é retornado o valor atual. A fórmula que dita a probabilidade de aceitação de um estado é: 
 
-<p align="center"><img heihgt="100px" src="https://latex.codecogs.com/gif.latex?p(x)=e^{\frac{\Delta_h(x)}{T}}"/></p>
+<p align="center"><img heihgt="100px" src="https://latex.codecogs.com/gif.latex?p(x)=e^{\frac{\Delta_{h(x)}}{T}}"/></p>
 
 Sendo `Δh = h(novo estado)- h(atual)` e `h(x)` é a função heurística de avaliação de um estado `x`. Para estados melhores que o atual, `Δh>0` e quanto maior `Δh` maior será `p(x)`. Para estados iguais ao atual, `Δh=0` => `p(x)=1` (aceita sempre). Para estados piores que o atual, `Δh<0` -> `p(x)<1` sendo que maior `T` faz com que o valor de `Δh` tenha menos efeito e aumenta a probabilidade.
 
