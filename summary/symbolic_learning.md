@@ -34,9 +34,9 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    * **ganho de informação**: o que escolher um dado atributo trás de melhoria para a entropia: `G(C|Ai) = info(C) - info(C|Ai)`
    
-   > Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
+   > ECO: Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
    
-   * **razão do ganho**: Normalizar o ganho. `RG(C|A)=Ganho(C|A)/info_separação(A)`
+   * **razão do ganho**: Normalizar o ganho.
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?RG(A_i)=\frac{G(C|A_i)}{infoS(C)}"/></p>
    
    * **razão do erro**: (medida da **confiança** numa folha)`e` é o número de exemplos que não pertencem àquela folha w `n` é o número total de exemplos que acabam naquela folha. 
