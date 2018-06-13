@@ -15,7 +15,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
 ```
  3. Definir as fórmulas (tudo em **bits** (exceto erro))
    * **entropia**: mede a **pureza** de um conjunto. 
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?H(C/a_k)=\sum_{j=1})^{M_k}p(a_{k,j})*[-\sum_{i=1}^{N}p(C_i|a_{k,j})*\log_2{p(C_i|a_{k,j})}]"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?H(C/a_k)=\sum_{j=1}^{M_k}p(a_{k,j})*[-\sum_{i=1}^{N}p(C_i|a_{k,j})*\log_2{p(C_i|a_{k,j})}]"/></p>
    
    
    * **informação média**: Se houver valores indefinidos, o denominador é decrementado (dá sempre o mesmo para todos os atributos a não ser que faltem valores).
@@ -32,8 +32,9 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    <p align="center"><img src="https://latex.codecogs.com/gif.latex?info(C|A_i)=\sum_{j=1}^{n}\frac{Cj}{C}*info(C_j)"/></p>
    
-   * **ganho de informação**: o que escolher um dado atributo trás de melhoria para a entropia: `G(C|Ai) = info(C) - info(C|Ai)`
+   * **ganho de informação**: o que escolher um dado atributo trás de melhoria para a entropia:
    
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=infoG(C|A_i)-info(C)"/></p>
    > ECO: Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
    
    * **razão do ganho**: Normalizar o ganho.
