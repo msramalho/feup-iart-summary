@@ -38,7 +38,7 @@ r(x1,x2,...,xn) = sum(1,n)r(x)
    
    se faltar conhecer algum valor de um atributo (usar freq dos conhecidos sobre conhecidos + desconhecidos):
    
-   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=f(known/total)*info(C)-info(C|A_i)"/></p>
+   <p align="center"><img src="https://latex.codecogs.com/gif.latex?G(C|A_i)=f(known/total)*(info(C)-info(C|A_i))"/></p>
    
    > ECO: Dá bons resultados mas sobrevaloriza testes com muitos valores possíveis.
    
