@@ -166,6 +166,22 @@ A ordenação dos nós gerados e avaliados pela função de avaliação permite 
 
 # Topic 3 - Uncertain Reasoning
 
+### 2016/2017 - Normal - e) [pdf](../exames/2017_N.pdf) [Näive-Bayes]
+#### Question:
+Explique qual é o compromisso subjacente ao uso da fórmula Näive-Bayes.
+
+#### Answer 1:
+O compromisso associado à fórmula do Teorema de Bayes:
+
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?P(A|B)=\frac{P(B|A)*P(A)}{P(B)}"/></p>
+
+é que pressupõe o conhecimento de 3 fatores que nem sempre estão disponíveis, nomeadamente, da probabilidade condicional oposta e das probabilidades individuais de cada um dos acontecimentos envolvidos. 
+
+
+[[resumos scissored](https://drive.google.com/drive/folders/0B-EpxqiRLla0aldhS19CbVFBUDQ)] by [@LastLombax, @msramalho]
+
+---
+
 
 # Topic 4 - Natural Language Processing (NLP)
 
