@@ -175,7 +175,7 @@ O compromisso associado à fórmula do Teorema de Bayes:
 
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?P(A|B)=\frac{P(B|A)*P(A)}{P(B)}"/></p>
 
-é que pressupõe a independância [TODO]
+é que pressupõe a independância entre os acontecimentos A e B e, como tal, estamos limitados a conclusões que assumem independência. Se tal não se verificar, as conclusões serão erradas. Um exemplo deste fenómeno é o de encontrar a palavra "viagra" e as palavras "blue pill" em emails e, no processo de os classificar em spam ou não, assumir que `P(viagra & bluepill) = P(Viagra) * P(bluepill)`, quando na verdade os emails que contém a palavra "viagra" costumam também conter "blue pill", de certa forma, a mesma informação acaba por ser contabilizada duas vezes. 
 
 
 [[resumos scissored](https://drive.google.com/drive/folders/0B-EpxqiRLla0aldhS19CbVFBUDQ)] by [@LastLombax, @msramalho]
