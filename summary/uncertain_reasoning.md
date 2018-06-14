@@ -32,3 +32,6 @@
  * Ignorância - `i=P-C` - Mede o que ainda não está fixo, quanto maior pior (menos informada) é a decisão num dado momento. Insuficiência de evidências, que se manifesta na distância entre C e P.
  * 
 
+Combinar evidências `m1 e m2`:
+ * Fazer tabela, intersetar e meter o produto das densidades de probabilidade. 
+ <p align="center"><img src="https://latex.codecogs.com/gif.latex?Belief(C1)=\frac{\sum_{X\cap&space;Y\subseteq&space;\{C1\}}m1(x)*m2(y)))}{1-\sum_{X\cap&space;Y\subseteq&space;\{\phi&space;\}}m1(x)*m2(y)))}"/></p>
