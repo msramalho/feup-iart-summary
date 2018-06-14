@@ -188,8 +188,6 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
   </tr>
 </table>
 
-##### Genetic Algorithms
-
 ##### Decomposition
 
 ##### Constraint Satisfaction
