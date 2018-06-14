@@ -37,7 +37,7 @@ Formally, for every node N and each successor P of N, the estimated cost of reac
             *   complete: yes
             *   time and space: O(branch_factor^depth) (empirically space a larger problem than time)
             *   optimality: yes, if path cost non-decreasing with depth.
-        2.  **Uniform Cost** (expand lo cost fringe node)
+        2.  **Uniform Cost (BB)** (expand lo cost fringe node)
             *   optimal: yes, if no negative costs
             *   a generalization of **Breadth-first**.
         3.  **Depth-first** (uses a stack)
@@ -163,6 +163,13 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 </table>
 
 ##### Branch and Bound
+
+<table>
+  <tr>
+    <td><img width="300" float="right" src="http://slideplayer.com/slide/4894778/16/images/3/Branch+and+Bound+The+incumbent+solution+has+value+43+1+x1+=+0+x1+=+1+2.jpg"/></td>
+  <td>Transverses a Search Tree by exploring branches of this tree, which represent subsets of the solution set. Before enumerating the candidate solutions of a branch, the branch is checked against upper and lower estimated bounds on the optimal solution, and is discarded if it cannot produce a better solution than the best one found so far by the algorithm.</td>
+  </tr>
+</table>
 
 ##### Hill Climbing
 
