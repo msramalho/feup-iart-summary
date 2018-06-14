@@ -23,3 +23,5 @@ Disclaimer: The `.docx` solutions in the [exams](exames/) folder are not my own.
 Thanks for your contribution: 
  * [@afonsobspinto](https://github.com/afonsobspinto)
  * [@antonioalmeida](https://github.com/antonioalmeida)
+ * [@LastLombax](https://github.com/LastLombax)
+ * [@NadiaCarvalho](https://github.com/NadiaCarvalho)
