@@ -53,7 +53,7 @@ Minitest1 (at the end):
                 *   completeness: no (could go down an endless branch)
                 *   optimality: no (ignores cost from initial node)
                 *   faster (on average) than uninformed algorithm
-            2.  **A* search** (combines uniform-cost search and greedy search)
+            2.  **A\* search** (combines uniform-cost search and greedy search)
                 *   expand nodes according to the estimated total cost function, f(n) = g(n) + h(n)
                 *   h(n) must always be optimistic (admissible)
                 *   completeness: yes
