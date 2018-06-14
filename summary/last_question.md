@@ -69,21 +69,6 @@ Descrever a figura:
 
 ---
 
-### 2012/2013 - Recurso - b) [pdf](../exames/2013_R.pdf) [ALFA-BETA]
-#### Question:
-Considere a seguinte árvore de jogo, em que os valores das folhas representam a avaliação do jogo nesse estado. Assumindo que os nós são analisados da esquerda para a direita, indique quais os nós que não são avaliados quando se usa o algoritmo Minimax Alfa-Beta.
-
-<p align="center"><img height="150px" src="https://i.imgur.com/OlGQysz.png"/></p>
-
-#### Answer 1:
-<p align="center"><img height="200px" src="https://i.imgur.com/PdYoEOm.png"/></p>
-
-Não avaliados: O, I, T, U, Y
-
-[] by [@msramalho]
-
----
-
 ### 2012/2013 - Recurso - a) [pdf](../exames/2013_R.pdf) [ARREFECIMENTO SIMULADO, HILL CLIMBING]
 #### Question:
 Comente a seguinte afirmação: “O algoritmo Arrefecimento Simulado, com uma temperatura constante positiva, é equivalente ao algoritmo Subir a Colina”. Como se comporta o algoritmo Arrefecimento Simulado quando o parâmetro temperatura é sempre igual a zero?
@@ -99,6 +84,33 @@ No caso de `T=0`, contudo, temos que `e^(Δh/0)` que acaba por ser um número n�
 
 ---
 
+### 2012/2013 - Recurso - b) [pdf](../exames/2013_R.pdf) [ALFA-BETA]
+#### Question:
+Considere a seguinte árvore de jogo, em que os valores das folhas representam a avaliação do jogo nesse estado. Assumindo que os nós são analisados da esquerda para a direita, indique quais os nós que não são avaliados quando se usa o algoritmo Minimax Alfa-Beta.
+
+<p align="center"><img height="150px" src="https://i.imgur.com/OlGQysz.png"/></p>
+
+#### Answer 1:
+<p align="center"><img height="200px" src="https://i.imgur.com/PdYoEOm.png"/></p>
+
+Não avaliados: O, I, T, U, Y
+
+[] by [@msramalho]
+
+---
+
+
+### 2012/2013 - Recurso - c) [pdf](../exames/2013_R.pdf) [MINIMAX, EXPECTIMINIMAX]
+#### Question:
+Suponha agora que o adversário (representado nos níveis minimizadores) joga de forma aleatória (a probabilidade de efetuar qualquer jogada é a mesma). Como alteraria o algoritmo MiniMax se tivesse esta informação?
+
+#### Answer 1:
+Nestas condições, este deixa de ser um jogo de informação completa e passa a ser de informação perfeita (todos conhecem todo o estado do jogo) mas incompleta (parte do jogo depende do acaso). Posto isto, e sem necessidade de reinventar a roda, podemos considerar o expectiminimax de [Donald Michie](https://en.wikipedia.org/wiki/Donald_Michie) que é em tudo semelhante ao Minimax, exceto nas decisões que envolvem probabilidade, nessas a abordagem é fazer uma média pesada (sendo os pesos as respetivas probabilidades) e assumir que é esse o valor da jogada (esta aboradagem converge para a melhor jogada possível). Tendo em conta que a probabilidade de o oponente efetuar qualquer jogada seria a mesma, basta apenas considerar pesos iguais o que resulta numa média aritmética das jogadas possíveis.
+
+
+[] by [@msramalho]
+
+---
 # Topic 2 - Evolutionary Algorithms
 
 
