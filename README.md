@@ -15,3 +15,9 @@ Licensed under: GLWT(Good Luck With That) Public [License](LICENSE)
 <h3><i>In Memoriam:</i></h3>
 
 <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Comic_Sans_sample.svg/2000px-Comic_Sans_sample.svg.png" width="500px"/></p>
+
+
+## Contributors
+Thanks for your contribution: 
+ * [@afonsobspinto](https://github.com/afonsobspinto)
+ * [@antonioalmeida](https://github.com/antonioalmeida)
