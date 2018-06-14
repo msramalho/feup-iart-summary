@@ -150,6 +150,17 @@ Nestas condições, este deixa de ser um jogo de informação completa e passa a
 
 ---
 
+### 2012/2013 - Normal - b) [pdf](../exames/2013_N.pdf) [ITERATIVE IMPROVEMENT: HILL CLIMBING, SIMULATED ANNEALING]
+#### Question:
+Explique o que caracteriza os algoritmos de pesquisa local (iterative improvement). Dê dois exemplos de algoritmos deste tipo, explicando sucintamente as suas diferenças.
+
+#### Answer 1:
+Os algoritmos de pesquisa local caracterizam-se pelo uso de heurísticas que permitem, para cada novo estado, testar a proximidade à solução e seleccionar a melhor opção, ignorando as outras. Dois exemplos de algoritmos deste tipo são o algoritmo “Hill Climbing”, que selecciona sempre o estado mais próximo da solução e o algoritmo “Simulated Annealing”  que aceita, no início do processo de pesquisa da solução, algumas hipóteses mais afastadas da solução podem ser geradas, evitando ficar preso em máximos e mínimos locais.
+
+[[slides 36-43](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/2MRPeAG.pdf)] by [@NadiaCarvalho]
+
+---
+
 ### 2012/2013 - Normal - c) [pdf](../exames/2013_N.pdf) [MINIMAX, ALFA-BETA]
 #### Question:
 Na aplicação do algoritmo minimax com cortes alfa-beta, explique que papel pode ter a ordenação dos nós gerados e avaliados pela função de avaliação.
