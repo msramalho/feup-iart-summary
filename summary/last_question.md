@@ -117,7 +117,7 @@ Nestas condições, este deixa de ser um jogo de informação completa e passa a
 Explique as vantagens do algoritmo IDA* (Iterative Deepening) sobre o A*
 
 #### Answer 1:
-Comom o A* tem de armazenar todos os estados encontrados até ao estado final, o algoritmo é bastante pesado a nível de memória utilizada. Apesar da qualidade da função heurísitica poder influenciar positivamente a complexidade temporal do A*, à medida que a escala (e espaço de pesquisa) aumentam, a utilização de IDA* torna-se mais viável de modo a reduzir a memória necessária. Isto deve-se ao facto do A* manter uma lista - tipicamente uma fila - de estados não visitados que rapidamente ocupam grandes níveis de memória. O IDA* mantém conhecimento apenas dos estados do caminho atual, de tal forma que a memória ocupada por essa lista aumenta linearmente apenas em relação ao tamanho da solução encontrada.
+Como o A* tem de armazenar todos os estados encontrados até ao estado final, o algoritmo é bastante pesado a nível de memória utilizada. Apesar da qualidade da função heurísitica poder influenciar positivamente a complexidade temporal do A*, à medida que a escala (e espaço de pesquisa) aumentam, a utilização de IDA* torna-se mais viável de modo a reduzir a memória necessária. Isto deve-se ao facto do A* manter uma lista - tipicamente uma fila - de estados não visitados que rapidamente ocupam grandes níveis de memória. O IDA* mantém conhecimento apenas dos estados do caminho atual, de tal forma que a memória ocupada por essa lista aumenta linearmente apenas em relação ao tamanho da solução encontrada.
 
 [[wikipedia](https://en.wikipedia.org/wiki/Iterative_deepening_A*)] by [@antonioalmeida]
 
