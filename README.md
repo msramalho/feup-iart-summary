@@ -2,7 +2,7 @@
 
 Licensed under: GLWT(Good Luck With That) Public [License](LICENSE)
 
-Disclaimer: The `.docx` solutions in the [exams](exams/) folder are not my own.
+Disclaimer: The `.docx` solutions in the [exams](exames/) folder are not my own.
 
  1. [Problem Solving Methods](summary/problem_solving_methods.md) (MT1 exercises)
  3. [Evolutionary Algorithms](summary/evolution_algorithms.md) (MT1 exercises)
