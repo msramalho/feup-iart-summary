@@ -8,10 +8,6 @@ Minitest1 (at the end):
  * [Problem 3 - minimax alpha-beta](#problem-3---minimax-alpha-beta)
 
 # Relevant Exam stuff
-#### Heurística Admissível
-TODO
-#### Heurística Consistente
-TODO
 
 1.  The general search algorithm
     
@@ -32,7 +28,7 @@ TODO
             *   complete: yes
             *   time and space: O(branch_factor^depth) (empirically space a larger problem than time)
             *   optimality: yes, if path cost non-decreasing with depth.
-        2.  **Uniform Cost** (expand lo cost fringe node)
+        2.  **Uniform Cost (BB)** (expand lo cost fringe node)
             *   optimal: yes, if no negative costs
             *   a generalization of **Breadth-first**.
         3.  **Depth-first** (uses a stack)
@@ -65,6 +61,15 @@ TODO
                 *   optimally efficient: no better algorithm with same knowledge
         2.  **Heuristic functions**
             *   Relax the demands of the problem
+            1. Admissible
+            
+                *   it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path - optimistic nature.
+             1. Consistent
+                   *   it estimates always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
+
+                        <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13f0aab8aafdf18e5e20ea1e069be091526b08f6" />, N is any node in the graph and P is any descendant of N.
+
+            
 
 ---
 
@@ -151,9 +156,37 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 
 ##### Branch and Bound
 
+<table>
+  <tr>
+    <td><img width="300" float="right" src="http://slideplayer.com/slide/4894778/16/images/3/Branch+and+Bound+The+incumbent+solution+has+value+43+1+x1+=+0+x1+=+1+2.jpg"/></td>
+  <td>Transverses a Search Tree by exploring branches of this tree, which represent subsets of the solution set. Before enumerating the candidate solutions of a branch, the branch is checked against upper and lower estimated bounds on the optimal solution, and is discarded if it cannot produce a better solution than the best one found so far by the algorithm.</td>
+  </tr>
+</table>
+
 ##### Hill Climbing
+<table>
+  <tr>
+    <td><img width="300" float="right" src="https://i.stack.imgur.com/HISbC.png"/></td>
+  <td>The hill-climbing search algorithm is
+      simply a loop that continually moves in the direction of increasing value—that is, uphill. It
+      terminates when it reaches a "peak" where no neighbor has a higher value. </td>
+  </tr>
+</table>
 
 ##### Simulated Annealing
+<table>
+  <tr>
+    <td><img width="300" float="right" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hill_Climbing_with_Simulated_Annealing.gif"/></td>
+  <td>Simulated Annealing combines hill climbing with a random walk in some way that yields
+       both efficiency and completeness.
+       
+ It generates a random number and checks if it is below <img src=https://image.ibb.co/h9pyXy/Untitled.png>, if so moves in the opposite direction of the best solution.  
+       
+       
+       
+ </td>
+  </tr>
+</table>
 
 ##### Genetic Algorithms
 
@@ -192,7 +225,7 @@ Problem from figure 2.2 in [Intelligent Systems for Engineering: A Knowledge-bas
 
 **Question:** Given a tree of `r = 2` (branching factor) and  `m = 2` (tree depth), with node values of 5,3,2,7, what are the values of α and β for each tree node and specify if all the tree nodes are visited.
 
-**Answer:** node with value `7` is cut and the values of α and β can be visualized [here](http://proof.github.io/minimax/#tree=KCg1LDMpLCgyLDcpKQ%3D%3D). 
+**Answer:** node with value `7` is cut and the values of α and β can be visualized [here](http://nmiljkovic.github.io/minimax/#tree=KCg1LDMpLCgyLDcpKQ%3D%3D). 
 
 
 
