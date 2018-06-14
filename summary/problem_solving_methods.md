@@ -172,6 +172,14 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 </table>
 
 ##### Hill Climbing
+<table>
+  <tr>
+    <td><img width="300" float="right" src="https://i.stack.imgur.com/HISbC.png"/></td>
+  <td>The hill-climbing search algorithm is
+      simply a loop that continually moves in the direction of increasing value—that is, uphill. It
+      terminates when it reaches a "peak" where no neighbor has a higher value. </td>
+  </tr>
+</table>
 
 ##### Simulated Annealing
 
