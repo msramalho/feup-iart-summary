@@ -45,6 +45,18 @@ Vantagem 2: Não é determinístico. Esta é uma vantagem face ao MM quando se f
 
 ---
 
+### 2016/2017 - Normal - a) [pdf](../exames/2017_N.pdf) [A*, IDA*]
+#### Question:
+No IDA*, ao contrário do ID, aumenta-se o custo e não a profundidade. Como deve ser incrementado esse custo limite?
+
+#### Answer 1:
+O custo limite, para cada iteração do algoritmo IDA*, deverá tomar o valor do custo mínimo de todos os valores que excedem o custo limite, nesse momento. Formalizando, C(i+1) = min(all_values_exceding_C(i)).
+  Se, por exemplo, na iteração i do algoritmo, o custo limite for 5 e os valores obtidos foram 7,8 e 10, então na iteração i+1, o custo limite será 7.
+
+[[wikipedia](https://en.wikipedia.org/wiki/Iterative_deepening_A*#Description)] by [@LastLombax]
+
+---
+
 
 ### 2015/2016 - Normal - a) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
 #### Question:
