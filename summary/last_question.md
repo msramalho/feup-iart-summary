@@ -208,6 +208,20 @@ Uma das barreiras que o C4.5 ultrapassou face ao ID3 foi a de sobrevalorização
 
 [[slide 76](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/6_ASA.pdf)] by [@msramalho]
 
+---
+
+### 2012/2013 - Normal - e) [pdf](../exames/2013_N.pdf) [SYMBOLIC vs SUBSYMBOLIC]
+#### Question:
+Em aprendizagem supervisionada, existem métodos simbólicos e métodos sub-simbólicos para a construção de modelos representativos dos exemplos pré-classificados. Indique o que distingue estes dois tipos de métodos e nomeie um exemplo de cada um deles.
+
+#### Answer 1:
+Estes dois tipos de métodos têm características muito diferentes, nomeadamente:
+ * Simbólicos: Passam pela aprendizagem estruturada de nova informação simbólica. Focam-se na aquisição/extração de conhecimento. Têm como vantagens: regra geral, permitir uma mais fácil inspeção e explicação dos resultados, dado que é possível rastrear os passos que levaram a uma dada conclusão. Exemplo: Árvores de Decisão
+ * Sub-simbólicos: Passa por refinar um procedimento através de tentativas sucessivas até atingir uma proximidade com o objetivo. Focam-se no refinamento de habilidades. Têm como vantagens: robustez face a ruído nos dados, melhor performance, menor necessidade de ter conhecimento de caso no início. Contudo, são mais difíceis de explicar, analisar e de fazer _debug_. Exemplo: Redes Neuronais
+
+[[mit](http://futureai.media.mit.edu/wp-content/uploads/sites/40/2016/02/Symbolic-vs.-Subsymbolic.pptx_.pdf), [slide 3](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/6_ASA.pdf)] by [@msramalho]
+
+---
 
 # Topic 6 - Artificial Neural Networks (ANN)
 
