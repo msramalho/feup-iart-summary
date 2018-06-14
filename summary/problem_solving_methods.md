@@ -205,7 +205,7 @@ Problem from figure 2.2 in [Intelligent Systems for Engineering: A Knowledge-bas
 
 **Question:** Given a tree of `r = 2` (branching factor) and  `m = 2` (tree depth), with node values of 5,3,2,7, what are the values of α and β for each tree node and specify if all the tree nodes are visited.
 
-**Answer:** node with value `7` is cut and the values of α and β can be visualized [here](http://proof.github.io/minimax/#tree=KCg1LDMpLCgyLDcpKQ%3D%3D). 
+**Answer:** node with value `7` is cut and the values of α and β can be visualized [here](http://nmiljkovic.github.io/minimax/#tree=KCg1LDMpLCgyLDcpKQ%3D%3D). 
 
 
 
