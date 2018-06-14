@@ -9,9 +9,14 @@ Minitest1 (at the end):
 
 # Relevant Exam stuff
 #### Heurística Admissível
-TODO
+A heuristic function is said to be admissible 
 #### Heurística Consistente
-TODO
+heuristic function is said to be consistent, or monotone, if its estimate is always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
+
+Formally, for every node N and each successor P of N, the estimated cost of reaching the goal from N is no greater than the step cost of getting to P plus the estimated cost of reaching the goal from P. That is:
+
+    h ( N ) ≤ c ( N , P ) + h ( P ) {\displaystyle h(N)\leq c(N,P)+h(P)} h(N)\leq c(N,P)+h(P) and
+    h ( G ) = 0. {\displaystyle h(G)=0.\,} h(G)=0.\, 
 
 1.  The general search algorithm
     
@@ -65,6 +70,14 @@ TODO
                 *   optimally efficient: no better algorithm with same knowledge
         2.  **Heuristic functions**
             *   Relax the demands of the problem
+            1. Admissible
+                *   it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path - optimistic nature.
+            2. Consistent
+                *   it estimates always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
+                
+                    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13f0aab8aafdf18e5e20ea1e069be091526b08f6" />, N is any node in the graph and P is any descendant of N.
+
+            
 
 ---
 
