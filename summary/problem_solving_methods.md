@@ -8,15 +8,6 @@ Minitest1 (at the end):
  * [Problem 3 - minimax alpha-beta](#problem-3---minimax-alpha-beta)
 
 # Relevant Exam stuff
-#### Heurística Admissível
-A heuristic function is said to be admissible 
-#### Heurística Consistente
-heuristic function is said to be consistent, or monotone, if its estimate is always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
-
-Formally, for every node N and each successor P of N, the estimated cost of reaching the goal from N is no greater than the step cost of getting to P plus the estimated cost of reaching the goal from P. That is:
-
-    h ( N ) ≤ c ( N , P ) + h ( P ) {\displaystyle h(N)\leq c(N,P)+h(P)} h(N)\leq c(N,P)+h(P) and
-    h ( G ) = 0. {\displaystyle h(G)=0.\,} h(G)=0.\, 
 
 1.  The general search algorithm
     
