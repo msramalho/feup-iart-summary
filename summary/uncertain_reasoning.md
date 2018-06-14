@@ -5,7 +5,7 @@
 
 ## Fuzzy Sets
 
-## Certainty Factor (Modelo dos Fatores de Certeza)
+## Modelo dos Fatores de Certeza
 
 ### Rules for updating knowledge:
 1. Combining evidences (E1 -> H, E2 -> H): 
@@ -24,3 +24,11 @@
 
 
 ## Dempster-shafer
+
+ * Crença - C - [0,1] crença atual num dado desfecho. Grau de confiança. 
+ * Plausibilidade - P - o valor máximo que a crença numa dada hipótese ainda pode tomar `P = 1 - ~C`. 
+ * Intervalo de confiança - [crença, plausibilidade]. 
+ * Incerteza - 
+ * Ignorância - `i=P-C` - Mede o que ainda não está fixo, quanto maior pior (menos informada) é a decisão num dado momento. Insuficiência de evidências, que se manifesta na distância entre C e P.
+ * 
+
