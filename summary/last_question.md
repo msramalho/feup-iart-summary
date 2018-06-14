@@ -108,7 +108,7 @@ Suponha agora que o adversário (representado nos níveis minimizadores) joga de
 Nestas condições, este deixa de ser um jogo de informação completa e passa a ser de informação perfeita (todos conhecem todo o estado do jogo) mas incompleta (parte do jogo depende do acaso). Posto isto, e sem necessidade de reinventar a roda, podemos considerar o expectiminimax de [Donald Michie](https://en.wikipedia.org/wiki/Donald_Michie) que é em tudo semelhante ao Minimax, exceto nas decisões que envolvem probabilidade, nessas a abordagem é fazer uma média pesada (sendo os pesos as respetivas probabilidades) e assumir que é esse o valor da jogada (esta aboradagem converge para a melhor jogada possível). Tendo em conta que a probabilidade de o oponente efetuar qualquer jogada seria a mesma, basta apenas considerar pesos iguais o que resulta numa média aritmética das jogadas possíveis.
 
 
-[] by [@msramalho]
+[[wikipedia](https://en.wikipedia.org/wiki/Expectiminimax_tree)] by [@msramalho]
 
 ---
 # Topic 2 - Evolutionary Algorithms
