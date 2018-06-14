@@ -147,7 +147,19 @@ Nestas condições, este deixa de ser um jogo de informação completa e passa a
 # Topic 4 - Natural Language Processing (NLP)
 
 
-# Topic 5 - Artificial Neural Networks (ANN)
+# Topic 5 - Symbolic Learning
+
+### 2016/2017 - Recurso - c) [pdf](../exames/2017_R.pdf) [C4.5 INFORMAÇÃO DE SEPARAÇÃO]
+#### Question:
+No C4.5 para que serve a informação de separação?
+
+#### Answer 1:
+Uma das barreiras que o C4.5 ultrapassou face ao ID3 foi a de sobrevalorização de testes com muitos valores possíveis através da introdução da noção de razão do ganho face à medida do ganho. A razão do ganho, por sua vez, resulta do quociente entre o ganho de informação e a informação de separação - correspondendo portanto a uma medida normalizada do ganho. A razão pela qual o denominador é a informação de separação deve-se a este valor representar o que um dado atributo contribui para a separação da classe. Desta forma, o C4.5 permite que a comparação de atributos não seja enviesada para os que contêm muitos valores possíveis.
+
+[[slide 76](https://web.fe.up.pt/~eol/IA/1718/APONTAMENTOS/6_ASA.pdf)] by [@msramalho]
+
+
+# Topic 6 - Artificial Neural Networks (ANN)
 
 ### 2015/2016 - Normal - g) [pdf](../exames/2016_N.pdf) [RNN]
 #### Question:
