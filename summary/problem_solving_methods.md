@@ -182,6 +182,17 @@ Genereates a potential solution (exhaustively) and tests it for a real solution.
 </table>
 
 ##### Simulated Annealing
+<table>
+  <tr>
+    <td><img width="300" float="right" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hill_Climbing_with_Simulated_Annealing.gif"/></td>
+  <td>It combines hill climbing with a random walk in some way that yields
+       both efficiency and completeness.
+       Instead of picking the best move, however, it picks a random move. If the move improves the situation, it is always accepted. Otherwise, the algorithm accepts the move with sonic probability less than 1.
+       
+       
+ </td>
+  </tr>
+</table>
 
 ##### Genetic Algorithms
 
