@@ -34,4 +34,5 @@
 
 Combinar evidências `m1 e m2`:
  * Fazer tabela, intersetar e meter o produto das densidades de probabilidade. 
+ * Usar a fórmula. Numerador -> interceção dá o evento, Denominador -> interseção dá conjunto vazio.
  <p align="center"><img src="https://latex.codecogs.com/gif.latex?Belief(C1)=\frac{\sum_{X\cap&space;Y\subseteq&space;\{C1\}}m1(x)*m2(y)))}{1-\sum_{X\cap&space;Y\subseteq&space;\{\phi&space;\}}m1(x)*m2(y)))}"/></p>
