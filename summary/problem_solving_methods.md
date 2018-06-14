@@ -19,7 +19,7 @@ Minitest1 (at the end):
     
 2.  Some search strategies:
     1.  Evaluation criteria:
-        1.  **completeness**: will it find a solution if one exists?
+        1.  **completeness**: a search algorithm that is guaranteed to find a solution if there is one
         2.  **time efficiency**:
         3.  **space efficiency**:
         4.  **optimality of solution**:
