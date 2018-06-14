@@ -69,6 +69,17 @@ Descrever a figura:
 
 ---
 
+### 2014/2015 - Normal - c) [pdf](../exames/2015_N.pdf) [A*]
+#### Question:
+Explique as vantagens do algoritmo IDA* (Iterative Deepening) sobre o A*
+
+#### Answer 1:
+Como o A* tem de armazenar todos os estados encontrados até ao estado final, o algoritmo é bastante pesado a nível de memória utilizada. Apesar da qualidade da função heurísitica poder influenciar positivamente a complexidade temporal do A*, à medida que a escala (e espaço de pesquisa) aumentam, a utilização de IDA* torna-se mais viável de modo a reduzir a memória necessária. Isto deve-se ao facto do A* manter uma lista - tipicamente uma fila - de estados não visitados que rapidamente ocupam grandes níveis de memória. O IDA* mantém conhecimento apenas dos estados do caminho atual, de tal forma que a memória ocupada por essa lista aumenta linearmente apenas em relação ao tamanho da solução encontrada.
+
+[[wikipedia](https://en.wikipedia.org/wiki/Iterative_deepening_A*)] by [@antonioalmeida]
+
+---
+
 ### 2012/2013 - Recurso - a) [pdf](../exames/2013_R.pdf) [ARREFECIMENTO SIMULADO, HILL CLIMBING]
 #### Question:
 Comente a seguinte afirmação: “O algoritmo Arrefecimento Simulado, com uma temperatura constante positiva, é equivalente ao algoritmo Subir a Colina”. Como se comporta o algoritmo Arrefecimento Simulado quando o parâmetro temperatura é sempre igual a zero?
@@ -109,17 +120,6 @@ Nestas condições, este deixa de ser um jogo de informação completa e passa a
 
 
 [[wikipedia](https://en.wikipedia.org/wiki/Expectiminimax_tree)] by [@msramalho]
-
----
-
-### 2014/2015 - Normal - c) [pdf](../exames/2015_N.pdf) [A*]
-#### Question:
-Explique as vantagens do algoritmo IDA* (Iterative Deepening) sobre o A*
-
-#### Answer 1:
-Como o A* tem de armazenar todos os estados encontrados até ao estado final, o algoritmo é bastante pesado a nível de memória utilizada. Apesar da qualidade da função heurísitica poder influenciar positivamente a complexidade temporal do A*, à medida que a escala (e espaço de pesquisa) aumentam, a utilização de IDA* torna-se mais viável de modo a reduzir a memória necessária. Isto deve-se ao facto do A* manter uma lista - tipicamente uma fila - de estados não visitados que rapidamente ocupam grandes níveis de memória. O IDA* mantém conhecimento apenas dos estados do caminho atual, de tal forma que a memória ocupada por essa lista aumenta linearmente apenas em relação ao tamanho da solução encontrada.
-
-[[wikipedia](https://en.wikipedia.org/wiki/Iterative_deepening_A*)] by [@antonioalmeida]
 
 ---
 
