@@ -36,7 +36,7 @@ This is the first answer. If there is doubt then multiple can exist
 No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
 
 #### Answer 1:
-O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais (não é completo nem ótimo, mas combate uma das limitações do hill climbing que é ficar preso em máximos locais). Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `T`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `T` maior é a probabilidade de a exploração ser beneficiada (face à potenciação), ou seja, `T` controla a probabilidade de selecionar estados que se afastam da melhor solução até ao momento. Quando `T=0` é retornado o valor atual. A fórmula que dita a probabilidade de aceitação de um estado é: 
+O agoritmo de arrefecimento simulado é um método de pesquisa para encontrar ótimos globais (**não é completo nem ótimo**, mas combate uma das limitações do hill climbing que é ficar preso em máximos locais). Caracterizado por considerar um valor de "temperatura" (que estabelece paralelismo com o arrefecimento de metais liquefeitos) e que vai diminuindo (arrefecendo) ao longo das iterações (tempo). Esse valor, doravente `T`, é usado para combater o problema "exploration vs exploitation", sendo que quanto menor é `T` maior é a probabilidade de a exploração ser beneficiada (face à potenciação), ou seja, `T` controla a probabilidade de selecionar estados que se afastam da melhor solução até ao momento. Quando `T=0` é retornado o valor atual. A fórmula que dita a probabilidade de aceitação de um estado é: 
 
 <p align="center"><img heihgt="100px" src="https://latex.codecogs.com/gif.latex?p(x)=e^{\frac{\Delta_{h(x)}}{T}}"/></p>
 
@@ -64,6 +64,21 @@ Descrever a figura:
  * No ramo A, o valor da folha teria de ser >= 3, de forma a que `alpha >= beta`.
  * No ramo B, o valor da folha teria de ser <= 2, de forma a que `beta <= alpha`.
  * No ramo C, o valor de uma das folha teria de ser 2 e o da outra <= 2 (se não houvesse a restrição do 2 já na árvore, também podiam ir até 3), de forma a que `beta <= alpha`.
+
+[] by [@msramalho]
+
+---
+
+### 2012/2013 - Recurso - a) [pdf](../exames/2013_R.pdf) [ARREFECIMENTO SIMULADO, HILL CLIMBING]
+#### Question:
+Comente a seguinte afirmação: “O algoritmo Arrefecimento Simulado, com uma temperatura constante positiva, é equivalente ao algoritmo Subir a Colina”. Como se comporta o algoritmo Arrefecimento Simulado quando o parâmetro temperatura é sempre igual a zero?
+
+#### Answer 1:
+(Ver [#20152016---normal---d-pdf-arrefecimento-simulado](#20152016---normal---d-pdf-arrefecimento-simulado) que descreve arrefecimento simulado)
+
+Se, no arrefecimento simulado, a temperatura `T` for constante, a fórmula da probabilidade reduz-se a `e^(Δh/k)` que acaba por ser `e^Δh`. Nestas condições, temos ainda que quanto melhor um estado for maior será a probabilidade de ser o próximo e quanto pior for, menor também será essa probabilidade. Apesar de não haver uma tendência para arriscar menos à medida que as iterações aumentam, ainda existe o conceito de probabilidade, portanto a afiramação é **falsa**. 
+
+No caso de `T=0`, contudo, temos que `e^(Δh/0)` que acaba por ser um número não real, mas se considerarmos como infinito (potência de divisão por 0) podemos derivar algumas conclusões. No caso de `Δh<0` (o estado é pior que o atual) teremos `p(x)=-∞` - os piores estados nunca são selecionados. Se o estado em consideração tiver o mesmo valor que o atual temos `0/0` o que acaba por ser uma indefinição e a intuição leva a crer que a probabilidade nesse caso seja considerada como nula. Caso contrário, teremos `Δh>0`, ou seja `p(x)=+∞`, nesse caso o estado será sempre selecionado. Portanto, perante `T=0` estamos perante o algoritmo de subir a colina, que avança apenas para estados de melhor valor. De realçar que há duas abordagens exclusivas no hill climbing: escolher o melhor ou expandir 1 a 1 até encontrar um melhor e que a implementação para a segunda opção era a que resultava de ter `T=0`, dado que não só se procuraria até a probabilidade ser 1 pela primeira vez.
 
 [] by [@msramalho]
 
