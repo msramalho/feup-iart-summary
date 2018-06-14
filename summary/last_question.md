@@ -31,7 +31,7 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 1 - Search Methods
 
-### 2015/2016 - Normal - d) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
+### 2015/2016 - Normal - a) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
 #### Question:
 No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
 
