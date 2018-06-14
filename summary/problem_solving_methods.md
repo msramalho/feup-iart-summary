@@ -62,11 +62,12 @@ Minitest1 (at the end):
         2.  **Heuristic functions**
             *   Relax the demands of the problem
             1. Admissible
+            
                 *   it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path - optimistic nature.
-            2. Consistent
-                *   it estimates always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
-                
-                    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13f0aab8aafdf18e5e20ea1e069be091526b08f6" />, N is any node in the graph and P is any descendant of N.
+             1. Consistent
+                   *   it estimates always less than or equal to the estimated distance from any neighboring vertex to the goal, plus the step cost of reaching that neighbor.
+
+                        <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13f0aab8aafdf18e5e20ea1e069be091526b08f6" />, N is any node in the graph and P is any descendant of N.
 
             
 
