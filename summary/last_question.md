@@ -175,7 +175,7 @@ O compromisso associado à fórmula do Teorema de Bayes:
 
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?P(A|B)=\frac{P(B|A)*P(A)}{P(B)}"/></p>
 
-é que pressupõe o conhecimento de 3 fatores que nem sempre estão disponíveis, nomeadamente, da probabilidade condicional oposta e das probabilidades individuais de cada um dos acontecimentos envolvidos. 
+é que pressupõe a independância [TODO]
 
 
 [[resumos scissored](https://drive.google.com/drive/folders/0B-EpxqiRLla0aldhS19CbVFBUDQ)] by [@LastLombax, @msramalho]
