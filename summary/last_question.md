@@ -150,6 +150,17 @@ Nestas condições, este deixa de ser um jogo de informação completa e passa a
 
 ---
 
+### 2012/2013 - Normal - c) [pdf](../exames/2013_N.pdf) [MINIMAX, ALFA-BETA]
+#### Question:
+Na aplicação do algoritmo minimax com cortes alfa-beta, explique que papel pode ter a ordenação dos nós gerados e avaliados pela função de avaliação.
+
+#### Answer 1:
+A ordenação dos nós gerados e avaliados pela função de avaliação permite reduzir a complexidade temporal da aplicação do algoritmo minimax com cortes alfa-beta. No pior caso, se a ordenação for exatamente da pior para a melhor jogada, todos os nós serão visitados e não haverá cortes (minimax normal com complexidade temporal O(n^m)) e no melhor caso, quando consideramos sempre a melhor resposta primeiro e portanto, podemos imediatamente cortar todas as jogadas seguintes, piores do que a do estado a avaliar, temos complexidade temporal O(n^(m/2)). 
+
+[[minimax](http://wiki.bethanycrane.com/minimax)] by [@NadiaCarvalho]
+
+---
+
 # Topic 2 - Evolutionary Algorithms
 
 
