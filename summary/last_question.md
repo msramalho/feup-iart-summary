@@ -31,6 +31,21 @@ This is the first answer. If there is doubt then multiple can exist
 
 # Topic 1 - Search Methods
 
+
+### 2016/2017 - Recurso - a) [pdf](../exames/2017_R.pdf) [MONTECARLO TREE SEARCH, MINIMAX]
+#### Question:
+Explique duas vantagens do MCTS face ao Minimax.
+
+#### Answer 1:
+Vantagem 1: Não precisa de uma função de avaliação (o Minimax pode precisar se a profundidade for muito grande) dado que executa sempre jogos até ao fim e é em função disso que toma decisões, ou seja, só precisa de conhecer a mecânica de jogo e não de ter a noção do que é uma boa ou má jogada.  
+
+Vantagem 2: Não é determinístico. Esta é uma vantagem face ao MM quando se fala de árvores muito grandes (nas quais o MM tem uma performance limitada por ser exaustivo). Ao fazer amostragens aleatórias o MCTS consegue criar estimativas do valor de cada estado - um exemplo flagrante disto é quando o minimax tem de ser restringido a uma profundidade tal que fica cego a alterações drásticas no valor dos estados, ao passo que o MCTS poderá vir a ter essa visão mais global. 
+
+[] by [@msramalho]
+
+---
+
+
 ### 2015/2016 - Normal - a) [pdf](../exames/2016_N.pdf) [ARREFECIMENTO SIMULADO]
 #### Question:
 No algoritmo de pesquisa por arrefecimento simulado, a aceitação de um novo estado depende da sua qualidade. Explique de que forma. 
