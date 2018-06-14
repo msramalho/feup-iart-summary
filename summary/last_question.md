@@ -69,6 +69,21 @@ Descrever a figura:
 
 ---
 
+### 2012/2013 - Recurso - b) [pdf](../exames/2013_R.pdf) [ALFA-BETA]
+#### Question:
+Considere a seguinte árvore de jogo, em que os valores das folhas representam a avaliação do jogo nesse estado. Assumindo que os nós são analisados da esquerda para a direita, indique quais os nós que não são avaliados quando se usa o algoritmo Minimax Alfa-Beta.
+
+<p align="center"><img height="150px" src="https://i.imgur.com/OlGQysz.png"/></p>
+
+#### Answer 1:
+<p align="center"><img height="200px" src="https://i.imgur.com/PdYoEOm.png"/></p>
+
+Não avaliados: O, I, T, U, Y
+
+[] by [@msramalho]
+
+---
+
 ### 2012/2013 - Recurso - a) [pdf](../exames/2013_R.pdf) [ARREFECIMENTO SIMULADO, HILL CLIMBING]
 #### Question:
 Comente a seguinte afirmação: “O algoritmo Arrefecimento Simulado, com uma temperatura constante positiva, é equivalente ao algoritmo Subir a Colina”. Como se comporta o algoritmo Arrefecimento Simulado quando o parâmetro temperatura é sempre igual a zero?
