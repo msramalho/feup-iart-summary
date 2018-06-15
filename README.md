@@ -1,9 +1,6 @@
 <h1 align="center">Artificial Intelligence Lectures Summary (IART at FEUP)</h1>
 
-Licensed under: GLWT(Good Luck With That) Public [License](LICENSE)
-
-Disclaimer: The `.docx` solutions in the [exams](exames/) folder are not my own.
-
+### Contents
  1. [Problem Solving Methods](summary/problem_solving_methods.md) (MT1 exercises)
  3. [Evolutionary Algorithms](summary/evolution_algorithms.md) (MT1 exercises)
  5. [Uncertain Reasoning](summary/uncertain_reasoning.md) (MT2 exercises)
@@ -11,8 +8,16 @@ Disclaimer: The `.docx` solutions in the [exams](exames/) folder are not my own.
  8. [Symbolic Learning](summary/symbolic_learning.md)
  9. Artificial Neural Networks TODO
  10. [Final Question of the Exam - chapa 6/7](summary/last_question.md) catálogo de perguntas e respostas que já saíram, agrupadas por tema.
+ 
+ 
 
----
+### About
+
+ * Licensed under: GLWT(Good Luck With That) Public [License](LICENSE)
+ * Disclaimer: The `.docx` solutions in the [exams](exames/) folder are not my own.
+ * Last Pdf merge: [15/06/2018](miscellaneous/merged_before_2018_N.pdf)
+
+
 
 <h3><i>In Memoriam:</i></h3>
 
